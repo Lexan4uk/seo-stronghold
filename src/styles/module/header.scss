@@ -1,0 +1,11 @@
+.header-service {
+}
+.header-studio {
+}
+
+@include media-down($bp) {
+	.header-service {
+	}
+	.header-studio {
+	}
+}

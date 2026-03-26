@@ -1,0 +1,261 @@
+html {
+	font-family: 'RG Grotesque', 'Arial', sans-serif;
+	color: var(--color-white-primary);
+	font-size: 0.520835vw;
+	font-style: normal;
+	font-weight: normal;
+	-webkit-animation: bugfix infinite 1s;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-style: normal;
+	font-weight: normal;
+	-webkit-animation: bugfix infinite 1s;
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+	background-color: var(--color-back-bg);
+	overflow-x: clip;
+}
+
+input,
+textarea {
+	-webkit-animation: bugfix infinite 1s;
+	line-height: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+.global-padding-x {
+	padding-left: 9.6rem;
+	padding-right: 9.6rem;
+}
+
+.font-secondary {
+	font-family: 'Panton';
+}
+.icon {
+	transition: color 0.3s ease;
+	display: block;
+	&.icon-orange {
+		color: var(--color-orange-dark);
+	}
+	&.icon-orange-hover:hover {
+		color: var(--color-orange-dark);
+	}
+
+	&.icon-white {
+		color: var(--color-white-primary);
+	}
+	&.icon-white-hover:hover {
+		color: var(--color-white-primary);
+	}
+	&.icon-black-bg {
+		color: var(--color-back-bg);
+	}
+}
+.z-1- {
+	z-index: -1;
+}
+.z-5 {
+	z-index: 5;
+}
+.opacity-0 {
+	opacity: 0;
+}
+.opacity-0-3 {
+	opacity: 0.3;
+}
+body.mob-menu-open {
+	overflow: hidden;
+}
+
+.mob-menu {
+	position: relative;
+
+	[data-mob-menu-toggle] {
+		cursor: pointer;
+	}
+
+	[data-mob-menu-panel] {
+		position: absolute;
+		top: calc(100% + 0.8rem);
+		right: 0;
+		width: fit-content;
+		z-index: 1200;
+		background: var(--color-dark-grey);
+		border: 0.1rem solid #ffffff1f;
+		border-radius: 1.2rem;
+		box-shadow: 0 1rem 3rem #00000066;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transform: translateY(-0.8rem) scale(0.98);
+		transform-origin: top right;
+		transition:
+			opacity 0.25s ease,
+			transform 0.25s ease;
+	}
+
+	[data-mob-menu-backdrop] {
+		display: none;
+	}
+
+	&.is-open {
+		[data-mob-menu-panel] {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: auto;
+			transform: translateY(0) scale(1);
+		}
+	}
+}
+
+.button {
+	transition: transform 0.2s ease;
+	&:hover {
+		transform: scale(1.05);
+	}
+	&--orange {
+		font-family: 'Panton';
+		text-transform: uppercase;
+		padding-top: 3.4rem;
+		padding-bottom: 3.4rem;
+		padding-left: 6.4rem;
+		padding-right: 6.4rem;
+		width: fit-content;
+		font-size: 1.8rem;
+		font-weight: 600;
+		&:active {
+		}
+	}
+	&--icon {
+		padding: 1.2rem;
+		border-radius: 100%;
+		background-color: var(--color-dark-grey);
+		transition: background-color 0.25s ease;
+	}
+}
+
+.secondary-button {
+	position: relative;
+	display: inline-block;
+
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: calc(100% + 1rem);
+		width: 100%;
+		height: 0.2rem;
+		background-color: var(--color-white-primary);
+		transform: scaleX(0);
+		transform-origin: left;
+		transition: transform 0.3s ease;
+	}
+
+	&:hover::after {
+		transform: scaleX(1);
+	}
+}
+
+.centered-absolute {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.centered-contain {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+.only-mobile {
+	display: none;
+}
+.only-desktop {
+	display: flex;
+}
+.nowrap {
+	white-space: nowrap;
+}
+.wrap {
+	white-space: normal;
+}
+.dark-bg {
+	background-color: var(--color-back-bg);
+}
+.light-dark-bg {
+	background-color: var(--color-dark-grey);
+}
+.white-bg {
+	background-color: var(--color-white-primary);
+}
+.orange-bg {
+	background-color: var(--color-orange-dark);
+}
+.underline {
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: calc(100% + 0.5rem);
+		width: 100%;
+		height: 0.2rem;
+		background-color: currentColor;
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+}
+@include media-down($bp) {
+	html {
+		font-size: 10px;
+		font-size: calc((100 / 393) * 10vw);
+		-webkit-text-size-adjust: none;
+	}
+	.csb-root {
+		display: none !important;
+	}
+
+	body {
+		-webkit-text-size-adjust: none;
+	}
+	.global-padding-x {
+		padding-left: 1.6rem;
+		padding-right: 1.6rem;
+	}
+	.only-mobile {
+		display: flex !important;
+	}
+	.only-desktop {
+		display: none !important;
+	}
+	.button {
+		&--orange {
+			padding-top: 2.2rem;
+			padding-bottom: 2.2rem;
+			padding-left: 4.4rem;
+			padding-right: 4.4rem;
+			font-size: 1.5rem;
+		}
+	}
+}
+@include media-up($_4k) {
+	html {
+		font-size: 20px;
+	}
+
+	.global-padding-x {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: $_4k;
+		width: 100%;
+	}
+}

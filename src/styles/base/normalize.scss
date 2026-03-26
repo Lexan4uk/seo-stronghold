@@ -1,0 +1,110 @@
+html {
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+
+input,
+textarea {
+	line-height: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: unset;
+	transition:
+		border-color 0.5s ease,
+		background-color 0.5s ease,
+		color 0.5s ease;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+}
+
+button,
+input,
+a,
+textarea {
+	outline: none;
+	cursor: pointer;
+	font: inherit;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+textarea:active {
+	outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+picture {
+	height: fit-content;
+}
+
+button {
+	border: none;
+	color: inherit;
+	font: inherit;
+	text-align: inherit;
+	padding: 0;
+	background-color: inherit;
+	height: fit-content;
+	width: fit-content;
+
+	transition:
+		border-color 0.5s ease,
+		background-color 0.5s ease,
+		color 0.5s ease;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}

@@ -1,0 +1,893 @@
+﻿<!doctype html>
+<html lang="ru">
+	<head>
+		@@include('html/base/meta.html',{ "title": "Сервис продвижения" }) @@include('html/base/styles.html')
+	</head>
+
+	<body>
+		<header class="global-padding-x">
+			<div class="flex justify-between items-center pt-3.2 pb-3.2 bp:pt-5 bp:pb-4">
+				<a class="w-24 bp:w-17" href="/service">
+					<img src="/images/img/main-logo.png" alt="Лого" />
+				</a>
+				<nav class="only-desktop gap-5 items-center">
+					<a class="text-1.6 weight-600 lh-1-2 tracking-6% uppercase secondary-button" href="/conditions">Условия</a>
+					<a class="text-1.6 weight-600 lh-1-2 tracking-6% uppercase secondary-button" href="/contact">контакты</a>
+					<a class="flex gap-0.8 items-center secondary-button" href="/profile">
+						<svg class="icon icon-orange h-2.4 w-2.4">
+							<use href="/images/svg/svgs.svg#icon-user"></use>
+						</svg>
+						<span class="text-1.6 weight-600 lh-1.2 tracking-6% uppercase">личный кабинет</span>
+					</a>
+				</nav>
+				<nav class="gap-0.8 items-center only-mobile mob-menu" data-mob-menu data-mob-menu-close-link="true" data-mob-menu-lock-body="false">
+					<a href="/profile">
+						<svg class="button--icon icon icon-orange h-2 w-2">
+							<use href="/images/svg/svgs.svg#icon-user"></use>
+						</svg>
+					</a>
+					<button type="button" data-mob-menu-toggle aria-expanded="false" aria-controls="service-mobile-menu-panel">
+						<svg class="button--icon icon icon-white icon-orange-hover h-2 w-2">
+							<use data-mob-menu-icon data-icon-close="/images/svg/svgs.svg#icon-menu" data-icon-open="/images/svg/svgs.svg#icon-cross" href="/images/svg/svgs.svg#icon-menu"></use>
+						</svg>
+					</button>
+					<div id="service-mobile-menu-panel" data-mob-menu-panel aria-hidden="true" class="p-1.6 flex flex-col gap-1.2">
+						<a class="text-1.6 weight-600 lh-1-2 tracking-6% uppercase secondary-button" href="/conditions">Условия</a>
+						<a class="text-1.6 weight-600 lh-1-2 tracking-6% uppercase secondary-button" href="/contact">контакты</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main class="service global-padding-x">
+			<section class="service__first-grid pb-3.2 bp:pb-0 grid gap-4.4 bp:gap-4 relative">
+				<div class="service__first-grid-img h-84 w-84 bp:w-36 bp:h-37 relative overflow-hidden border-rad-4 relative">
+					<img class="centered-contain" src="/images/img/yandex-banner.png" alt="Яндекс" />
+					<div class="service__first-img-label absolute z-5 pr-2 pt-2 bp:pr-1 bp:pt-1">
+						<div class="flex w-23 h-20 bp:w-13 bp:h-11 items-center justify-center flex-col border-solid border-0.2 border-rad-4 bordergradcx-light-stroke">
+							<svg class="icon h-5 w-5 mb-2.4 bp:h-2.4 bp:w-2.4 bp:mb-1.8">
+								<use href="/images/svg/svgs.svg#icon-star2"></use>
+							</svg>
+							<span class="text-1.6 bp:text-1.3 weight-600 lh-1-2 tracking-6% uppercase text-center">17 лет в SEO<br />технологиях</span>
+						</div>
+					</div>
+				</div>
+				<div class="service__first-grid-top flex flex-col relative">
+					<span class="text-1.6 bp:text-1.3 font-secondary lh-1-2 tracking-6% textcol-orange-dark uppercase mt-3 bp:mt-0">
+						Онлайн сервис <br class="only-desktop" />
+						для владельцев сайтов, <br />
+						seo-специалистов <br class="only-desktop" />
+						и веб-студий
+					</span>
+					<span class="text-7 bp:text-3.3 textgrad-light-grey fw-300 uppercase mt-7.6 bp:mt-4 lh-0-9">
+						продвижение <br />
+						сайтов с оплатой <br />
+						по факту
+					</span>
+					<div class="flex items-center bp:items-start bp:flex-col mt-4 bp:mt-2.4 gap-3.4 bp:gap-4">
+						<button class="button button--orange relative pl-4.2 pr-4.2">
+							<span class="z-5">начать бесплатно</span>
+							<img class="centered-absolute absolute z-1- h-full w-full" src="/images/img/btn-bg.png" alt="Бг кнопки" />
+						</button>
+						<span class="text-2 lh-1-2 bp:text-1.6 bp:lh-1">
+							Начни пользоваться сервисом <br />
+							на бесплатной тарифе<br />
+							без ограничений по времени
+						</span>
+					</div>
+				</div>
+				<div class="service__first-grid-bottom flex bp:flex-col border-solid border-t-0.2 bordergradx-light-stroke bp:border-t-0 mt-auto">
+					<div class="flex flex-1 flex-col pt-4.4 bp:pt-0 bp:pb-2">
+						<span class="textcol-gray-200 text-3.2 bp:text-2.4">Топ-3</span>
+						<span class="mt-1.6 bp:mt-1.2 text-1.6 lh-1-2 bp:lh-1-1 max-w-18 bp:max-w-100"> в Яндексе в течение первых недель использования сервиса </span>
+					</div>
+
+					<div class="flex flex-1 pl-4.2 bp:pl-0 flex-col bp:mr-0 bp:ml-0 pt-4.4 bp:pt-2 bp:pb-2 border-solid bordergrady-light-grey border-r-0.2 border-l-0.2 bp:bordergradx-light-stroke bp:border-t-0.2 bp:border-r-0 bp:border-l-0">
+						<span class="textcol-gray-200 text-3.2 bp:text-2.4">Просто</span>
+						<span class="mt-1.6 bp:mt-1.2 text-1.6 lh-1-2 bp:lh-1-1 max-w-22 bp:max-w-100"> включите продвижение вашего сайта бесплатно в личном кабинете прямо сейчас </span>
+					</div>
+
+					<div class="flex flex-1 pl-4.2 bp:pl-0 flex-col bp:mr-0 bp:ml-0 pt-4.4 bp:pt-2 border-solid bordergradx-light-stroke bp:border-t-0.2">
+						<span class="textcol-gray-200 text-3.2 bp:text-2.4">Надежно</span>
+						<span class="mt-1.6 bp:mt-1.2 text-1.6 lh-1-2 bp:lh-1-1 max-w-22 bp:max-w-100">сотни успешных кейсов по всем регионам в разных нишах бизнеса </span>
+					</div>
+				</div>
+				<img class="service__first-grid-bg absolute only-desktop" src="/images/img/bg-grey-dispersion.png" alt="Серая дисперсия бэкграунд" />
+			</section>
+			<section class="mt-21 bp:mt-12 flex flex-col">
+				<span class="text-1.6 bp:text-1.3 font-secondary lh-1-2 tracking-6% textcol-orange-dark uppercase"> Простой старт без предоплаты </span>
+				<span class="text-7 bp:text-3.3 textgrad-light-grey fw-300 uppercase mt-2.4 bp:mt-1.2 lh-0-9"> Тарифные планы </span>
+				<div class="flex bp:flex-col gap-4.4 bp:gap-4 mt-8 bp:mt-4">
+					<div class="service__tariff-orange flex-1 flex flex-col border-solid border-0.2 border-rad-4 bordergradcx-orange-stroke p-1.2 gap-1.2">
+						<div class="service__tariff-bg-color-border overflow-hidden border-solid border-0.2 border-rad-4 bordergradcx-dark-stroke relative">
+							<div class="service__tariff-bg-color p-1.2 bp:p-0.8 flex justify-between relative">
+								<div class="flex flex-col py-2 bp:py-1.2 pl-2 bp:pl-1.2 z-5 gap-1.6">
+									<span class="text-2.4">Free</span>
+									<div class="flex">
+										<span class="text-3.2 h-fit">0</span>
+										<span class="text-1.8 fw-500 mb-auto ml-0.2">₽</span>
+										<span class="text-2 mt-auto">&nbsp;/месяц</span>
+									</div>
+									<span class="text-1.8 bp:text-1.6">
+										Полностью бесплатно<br />
+										неограниченное время
+									</span>
+								</div>
+								<div class="service__tariff-svg-bg p-1.6 h-fit border-rad-max absolute top-0 right-0 m-1.2 bp:m-0.8">
+									<svg class="icon h-4 w-4 bp:h-2.4 bp:w-2.4 textcol-orange-dark">
+										<use href="/images/svg/svgs.svg#icon-wave-foam"></use>
+									</svg>
+								</div>
+							</div>
+
+							<img class="service__tariff-bg-img centered-absolute absolute h-full w-full" src="/images/img/tariff-card-bg.png" alt="Серая дисперсия бэкграунд" />
+						</div>
+						<div class="light-dark-bg flex flex-col p-3.2 bp:p-2 border-rad-4 gap-1.8 flex-1">
+							<div class="flex flex-col gap-1.6 bp:gap-1.4 text-1.8 bp:text-1.6">
+								<div class="flex"><span class="textcol-orange-dark">10</span>&nbsp;фраз&nbsp;<span class="textcol-gray-200">/</span>&nbsp;на 1 домен</div>
+								<span> Можно продвигать бесплатно неограниченное количество доменов </span>
+								<div class="flex"><span class="textcol-gray-200">Частотность:</span>&nbsp;Любая</div>
+								<div class="flex"><span class="textcol-gray-200">Регион:</span>&nbsp;Любой</div>
+							</div>
+							<button class="button flex justify-center py-2 bp:py-1.8 border-solid border-0.2 border-rad-4 bordergradcx-orange-stroke dark-bg w-full mt-auto">
+								<span class="font-secondary uppercase fw-600 text-1.6 bp:text-1.5 lh-1-2 bp:lh-1">выбрать тариф</span>
+							</button>
+						</div>
+					</div>
+					<div class="service__tariff-turquoise flex-1 flex flex-col border-solid border-0.2 border-rad-4 bordergradcx-turquoise-stroke p-1.2 gap-1.2">
+						<div class="service__tariff-bg-color-border overflow-hidden border-solid border-0.2 border-rad-4 bordergradcx-dark-stroke relative">
+							<div class="service__tariff-bg-color p-1.2 bp:p-0.8 flex justify-between relative">
+								<div class="flex flex-col py-2 bp:py-1.2 pl-2 bp:pl-1.2 z-5 gap-1.6">
+									<span class="text-2.4">Basic</span>
+									<div class="flex">
+										<span class="text-3.2 h-fit">5 000</span>
+										<span class="text-1.8 fw-500 mb-auto ml-0.2">₽</span>
+										<span class="text-2 mt-auto">&nbsp;/месяц</span>
+									</div>
+									<span class="text-1.8 bp:text-1.6">
+										Бескомпромиссно <br />
+										лучшая цена на рынке SEO
+									</span>
+								</div>
+								<div class="service__tariff-svg-bg p-1.6 h-fit border-rad-max absolute top-0 right-0 m-1.2 bp:m-0.8">
+									<svg class="icon h-4 w-4 bp:h-2.4 bp:w-2.4 textcol-turquoise">
+										<use href="/images/svg/svgs.svg#icon-shuriken"></use>
+									</svg>
+								</div>
+							</div>
+
+							<img class="service__tariff-bg-img centered-absolute absolute h-full w-full" src="/images/img/tariff-card-bg.png" alt="Серая дисперсия бэкграунд" />
+						</div>
+						<div class="light-dark-bg flex flex-col p-3.2 bp:p-2 border-rad-4 gap-1.8 flex-1">
+							<div class="flex flex-col gap-1.6 bp:gap-1.4 text-1.8 bp:text-1.6">
+								<div class="flex"><span class="textcol-turquoise">50</span>&nbsp;фраз&nbsp;<span class="textcol-gray-200">/</span>&nbsp;на 1 домен</div>
+								<div class="flex"><span class="textcol-gray-200">Частотность:</span>&nbsp;Любая</div>
+								<div class="flex"><span class="textcol-gray-200">Регион:</span>&nbsp;Любой</div>
+								<div class="flex items-center p-1.2 bp:py-1.8 border-rad-4 dark-bg gap-1.2">
+									<div class="p-0 h-fit border-rad-max light-dark-bg">
+										<svg class="icon h-2.4 w-2.4 textcol-turquoise">
+											<use href="/images/svg/svgs.svg#icon-alert"></use>
+										</svg>
+									</div>
+									<span class="textcol-gray-200 uppercase fw-600 bp:fw-400 text-1.2 lh-1-3 tracking-6%">Платите в конце месяца, если вас устраивает результат</span>
+								</div>
+							</div>
+							<button class="button flex justify-center py-2 bp:py-1.8 border-solid border-0.2 border-rad-4 bordergradcx-turquoise-stroke dark-bg w-full mt-auto">
+								<span class="font-secondary uppercase fw-600 text-1.6 bp:text-1.5 lh-1-2 bp:lh-1">выбрать тариф</span>
+							</button>
+						</div>
+					</div>
+					<div class="service__tariff-blue flex-1 flex flex-col border-solid border-0.2 border-rad-4 bordergradcx-blue-stroke p-1.2 gap-1.2">
+						<div class="service__tariff-bg-color-border overflow-hidden border-solid border-0.2 border-rad-4 bordergradcx-dark-stroke relative">
+							<div class="service__tariff-bg-color p-1.2 bp:p-0.8 flex justify-between relative">
+								<div class="flex flex-col py-2 bp:py-1.2 pl-2 bp:pl-1.2 z-5 gap-1.6">
+									<span class="text-2.4">Pro</span>
+									<div class="flex">
+										<span class="text-3.2 h-fit">10 000</span>
+										<span class="text-1.8 fw-500 mb-auto ml-0.2">₽</span>
+										<span class="text-2 mt-auto">&nbsp;/месяц</span>
+									</div>
+									<span class="text-1.8 bp:text-1.6">
+										Заметные результаты <br />
+										даже при высокой конкуренции
+									</span>
+								</div>
+								<div class="service__tariff-svg-bg p-1.6 h-fit border-rad-max absolute top-0 right-0 m-1.2 bp:m-0.8">
+									<svg class="icon h-4 w-4 bp:h-2.4 bp:w-2.4 textcol-blue">
+										<use href="/images/svg/svgs.svg#icon-fire-power"></use>
+									</svg>
+								</div>
+							</div>
+
+							<img class="service__tariff-bg-img centered-absolute absolute h-full w-full" src="/images/img/tariff-card-bg.png" alt="Серая дисперсия бэкграунд" />
+						</div>
+						<div class="light-dark-bg flex flex-col p-3.2 bp:p-2 border-rad-4 gap-1.8 flex-1">
+							<div class="flex flex-col gap-1.6 bp:gap-1.4 text-1.8 bp:text-1.6">
+								<div class="flex"><span class="textcol-blue">100</span>&nbsp;фраз&nbsp;<span class="textcol-gray-200">/</span>&nbsp;на 1 домен</div>
+								<div class="flex"><span class="textcol-gray-200">Частотность:</span>&nbsp;Любая</div>
+								<div class="flex"><span class="textcol-gray-200">Регион:</span>&nbsp;Любой</div>
+								<div class="flex items-center p-1.2 bp:py-1.8 border-rad-4 dark-bg gap-1.2">
+									<div class="p-0 h-fit border-rad-max light-dark-bg">
+										<svg class="icon h-2.4 w-2.4 textcol-blue">
+											<use href="/images/svg/svgs.svg#icon-alert"></use>
+										</svg>
+									</div>
+									<span class="textcol-gray-200 uppercase fw-600 bp:fw-400 text-1.2 lh-1-3 tracking-6%">Платите в конце месяца, если вас устраивает результат</span>
+								</div>
+							</div>
+							<button class="button flex justify-center py-2 bp:py-1.8 border-solid border-0.2 border-rad-4 bordergradcx-blue-stroke dark-bg w-full mt-auto">
+								<span class="font-secondary uppercase fw-600 text-1.6 bp:text-1.5 lh-1-2 bp:lh-1">выбрать тариф</span>
+							</button>
+						</div>
+					</div>
+					<div class="service__tariff-pink flex-1 flex flex-col border-solid border-0.2 border-rad-4 bordergradcx-pink-stroke p-1.2 gap-1.2">
+						<div class="service__tariff-bg-color-border overflow-hidden border-solid border-0.2 border-rad-4 bordergradcx-dark-stroke relative">
+							<div class="service__tariff-bg-color p-1.2 bp:p-0.8 flex justify-between relative">
+								<div class="flex flex-col py-2 bp:py-1.2 pl-2 bp:pl-1.2 z-5 gap-1.6">
+									<span class="text-2.4">Enterprise</span>
+									<div class="flex opacity-0">
+										<span class="text-3.2 h-fit opacity">0</span>
+									</div>
+									<span class="text-1.8 bp:text-1.6">
+										Индивидуальные <br />
+										условия сотрудничества
+									</span>
+								</div>
+								<div class="service__tariff-svg-bg p-1.6 h-fit border-rad-max absolute top-0 right-0 m-1.2 bp:m-0.8">
+									<svg class="icon h-4 w-4 bp:h-2.4 bp:w-2.4 textcol-pink">
+										<use href="/images/svg/svgs.svg#icon-prism"></use>
+									</svg>
+								</div>
+							</div>
+
+							<img class="service__tariff-bg-img centered-absolute absolute h-full w-full" src="/images/img/tariff-card-bg.png" alt="Серая дисперсия бэкграунд" />
+						</div>
+						<div class="light-dark-bg flex flex-col p-3.2 bp:p-2 border-rad-4 gap-1.8 flex-1">
+							<div class="flex flex-col gap-1.6 bp:gap-1.4 text-1.8 bp:text-1.6">
+								<span> Если вам необходимо продвигаться по 100+ или 1000+ фраз в нескольких или всех регионах. </span>
+								<span>
+									Для уточнения свяжитесь <br />
+									в отделом продаж по e-mail:<br />
+									<span class="textcol-orange-light">sales@seostronghold.ru</span>
+								</span>
+								<span> Или оставьте свои контакты</span>
+							</div>
+							<button data-service-request-open class="button flex justify-center py-2 bp:py-1.8 border-solid border-0.2 border-rad-4 bordergradcx-pink-stroke dark-bg w-full mt-auto">
+								<span class="font-secondary uppercase fw-600 text-1.6 bp:text-1.5 lh-1-2 bp:lh-1">оставить заявку</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mt-21 bp:mt-12">
+				<div class="flex justify-between gap-2.4 bp:flex-col">
+					<span class="text-7 bp:text-3.3 textgrad-light-grey fw-300 uppercase lh-0-9">
+						примеры роста<br />
+						и удержания позиций
+					</span>
+					<span class="text-1.6 bp:text-1.3 font-secondary lh-1-2 tracking-6% textcol-orange-dark uppercase mt-auto text-right bp:text-left">
+						Первые результаты продвижения<br />
+						вы можете увидеть в течение от недели<br />
+						до месяца полностью бесплатно
+					</span>
+				</div>
+				<div class="flex flex-col gap-4.4 bp:gap-4 mt-6.8 bp:mt-4">
+					<!--свайпер-->
+					<div class="service__swiper swiper overflow-hidden border-rad-4 w-full">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="border-solid border-0.2 border-rad-4 bordergradcx-light-stroke px-3.2 py-4.4 bp:px-2 bp:py-2.4 flex flex-col">
+									<span class="textcol-gray-200 uppercase fw-600 bp:text-1.3 lh-1-2 tracking-6%">Регион: москва</span>
+									<span class="text-2.8 bp:text-2.4 mt-0.8 mb-auto">Портал в сфере наркологии</span>
+									<div class="border-solid border-0.2 border-rad-4 bordergradcx-dark-stroke overflow-hidden mt-4 bp:mt-2.4">
+										<div class="px-2.4 bp:px-1.6 py-2.4 bp:py-2 flex flex-col light-dark-bg">
+											<span class="text-1.6 bp:text-1.3 font-secondary lh-1-2 tracking-6% textcol-orange-dark uppercase fw-600">результат</span>
+											<div class="flex gap-1.2 bp:gap-1 items-center mt-1.6 bp:mt-1.2">
+												<span class="text-2 bp:text-1.6">⚡️</span>
+												<span class="text-2 bp:text-1.6">Все приоритетные запросы в ТОП-3 Яндекса</span>
+											</div>
+											<div class="flex gap-1.2 bp:gap-1 items-center mt-1.2 bp:mt-1.6">
+												<span class="text-2 bp:text-1.6">📈</span>
+												<span class="text-2 bp:text-1.6">Рост x3 трафика из Яндекса</span>
+											</div>
+										</div>
+									</div>
+									<div class="light-dark-bg border-rad-2.4 overflow-hidden h-31 bp:h-20 flex items-center justify-center mt-2.4 bp:mt-1.6">
+										<img class="centered-contain" src="/images/img/sheet.png" alt="Картинка слайдера" />
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="border-solid border-0.2 border-rad-4 bordergradcx-light-stroke px-3.2 py-4.4 bp:px-2 bp:py-2.4 flex flex-col">
+									<span class="textcol-gray-200 uppercase fw-600 bp:text-1.3 lh-1-2 tracking-6%">Регион: москва</span>
+									<span class="text-2.8 bp:text-2.4 mt-0.8 mb-auto">Сайт в сфере IT</span>
+									<div class="border-solid border-0.2 border-rad-4 bordergradcx-dark-stroke overflow-hidden mt-4 bp:mt-2.4">
+										<div class="px-2.4 bp:px-1.6 py-2.4 bp:py-2 flex flex-col light-dark-bg">
+											<span class="text-1.6 bp:text-1.3 font-secondary lh-1-2 tracking-6% textcol-orange-dark uppercase fw-600">результат</span>
+											<div class="flex gap-1.2 bp:gap-1 items-center mt-1.6 bp:mt-1.2">
+												<span class="text-2 bp:text-1.6">⚡️</span>
+												<span class="text-2 bp:text-1.6">Все приоритетные запросы в ТОП-3 Яндекса</span>
+											</div>
+											<div class="flex gap-1.2 bp:gap-1 items-center mt-1.2 bp:mt-1.6">
+												<span class="text-2 bp:text-1.6">📈</span>
+												<span class="text-2 bp:text-1.6">Рост x3 трафика из Яндекса</span>
+											</div>
+										</div>
+									</div>
+									<div class="light-dark-bg border-rad-2.4 overflow-hidden h-31 bp:h-20 flex items-center justify-center mt-2.4 bp:mt-1.6">
+										<img class="centered-contain" src="/images/img/sheet.png" alt="Картинка слайдера" />
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="border-solid border-0.2 border-rad-4 bordergradcx-light-stroke px-3.2 py-4.4 bp:px-2 bp:py-2.4 flex flex-col">
+									<span class="textcol-gray-200 uppercase fw-600 bp:text-1.3 lh-1-2 tracking-6%">Регион: москва</span>
+									<span class="text-2.8 bp:text-2.4 mt-0.8 mb-auto">Портал в сфере наркологии</span>
+									<div class="border-solid border-0.2 border-rad-4 bordergradcx-dark-stroke overflow-hidden mt-4 bp:mt-2.4">
+										<div class="px-2.4 bp:px-1.6 py-2.4 bp:py-2 flex flex-col light-dark-bg">
+											<span class="text-1.6 bp:text-1.3 font-secondary lh-1-2 tracking-6% textcol-orange-dark uppercase fw-600">результат</span>
+											<div class="flex gap-1.2 bp:gap-1 items-center mt-1.6 bp:mt-1.2">
+												<span class="text-2 bp:text-1.6">⚡️</span>
+												<span class="text-2 bp:text-1.6">Все приоритетные запросы в ТОП-3 Яндекса</span>
+											</div>
+											<div class="flex gap-1.2 bp:gap-1 items-center mt-1.2 bp:mt-1.6">
+												<span class="text-2 bp:text-1.6">📈</span>
+												<span class="text-2 bp:text-1.6">Рост x3 трафика из Яндекса</span>
+											</div>
+										</div>
+									</div>
+									<div class="light-dark-bg border-rad-2.4 overflow-hidden h-31 bp:h-20 flex items-center justify-center mt-2.4 bp:mt-1.6">
+										<img class="centered-contain" src="/images/img/sheet.png" alt="Картинка слайдера" />
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="border-solid border-0.2 border-rad-4 bordergradcx-light-stroke px-3.2 py-4.4 bp:px-2 bp:py-2.4 flex flex-col">
+									<span class="textcol-gray-200 uppercase fw-600 bp:text-1.3 lh-1-2 tracking-6%">Регион: москва</span>
+									<span class="text-2.8 bp:text-2.4 mt-0.8 mb-auto">Сайт в сфере IT</span>
+									<div class="border-solid border-0.2 border-rad-4 bordergradcx-dark-stroke overflow-hidden mt-4 bp:mt-2.4">
+										<div class="px-2.4 bp:px-1.6 py-2.4 bp:py-2 flex flex-col light-dark-bg">
+											<span class="text-1.6 bp:text-1.3 font-secondary lh-1-2 tracking-6% textcol-orange-dark uppercase fw-600">результат</span>
+											<div class="flex gap-1.2 bp:gap-1 items-center mt-1.6 bp:mt-1.2">
+												<span class="text-2 bp:text-1.6">⚡️</span>
+												<span class="text-2 bp:text-1.6">Все приоритетные запросы в ТОП-3 Яндекса</span>
+											</div>
+											<div class="flex gap-1.2 bp:gap-1 items-center mt-1.2 bp:mt-1.6">
+												<span class="text-2 bp:text-1.6">📈</span>
+												<span class="text-2 bp:text-1.6">Рост x3 трафика из Яндекса</span>
+											</div>
+										</div>
+									</div>
+									<div class="light-dark-bg border-rad-2.4 overflow-hidden h-31 bp:h-20 flex items-center justify-center mt-2.4 bp:mt-1.6">
+										<img class="centered-contain" src="/images/img/sheet.png" alt="Картинка слайдера" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="service__swiper-controls">
+						<button type="button" class="service__swiper-prev flex items-center gap-1.6">
+							<svg class="icon icon-white w-4.6 h-1.6">
+								<use href="/images/svg/svgs.svg#icon-arrow-left"></use>
+							</svg>
+							<span class="service__swiper-current text-2 bp:text-2">01</span>
+						</button>
+						<div class="service__swiper-pagination flex items-center justify-center gap-0.8"></div>
+						<button type="button" class="service__swiper-next flex items-center gap-1.6">
+							<span class="service__swiper-total text-2 bp:text-2">00</span>
+							<svg class="icon icon-white w-4.6 h-1.6">
+								<use href="/images/svg/svgs.svg#icon-arrow-right"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="mt-28 bp:mt-12">
+				<div class="service__requirements-grid grid items-center">
+					<span class="service__requirements-grid-1 text-7 bp:text-3.3 textgrad-light-grey fw-300 uppercase lh-0-9"> Требования </span>
+					<span class="service__requirements-grid-2 text-1.6 bp:text-1.3 font-secondary lh-1-2 tracking-6% textcol-orange-dark uppercase mr-auto ml-1.6 bp:ml-0 bp:mt-2.4">
+						Для использования <br />
+						нашего онлайн сервиса
+					</span>
+					<span class="service__requirements-grid-3 text-7 bp:text-3.3 textgrad-light-grey fw-300 uppercase lh-1-1"> к вашему сайту </span>
+				</div>
+				<div class="flex bp:flex-col gap-5.6 bp:gap-2.4 mt-8 bp:mt-4">
+					<div class="border-solid border-0.2 border-rad-4 bordergradcx-light-stroke p-1.2 flex flex-col">
+						<div class="border-rad-3.2 overflow-hidden light-dark-bg p-6 bp:p-2">
+							<div class="h-24 bp:h-16">
+								<img class="centered-contain" src="/images/img/requirements-img1.png" alt="Картинка требований" />
+							</div>
+						</div>
+
+						<div class="border-rad-3.2 overflow-hidden mt-1.2 white-bg p-4 bp:p-2 flex flex-col">
+							<span class="textcol-gray-200 font-secondary uppercase fw-600 bp:text-1.5 lh-1-2 bp:lh-1 tracking-6%">01</span>
+							<span class="text-2.4 bp:text-2 mt-2.4 bp:mt-1.2 textcol-black-primary">Ваш сайт находится в ТОП-100 Яндекса по фразам, которые вы хотите продвигать</span>
+						</div>
+					</div>
+					<div class="border-solid border-0.2 border-rad-4 bordergradcx-light-stroke p-1.2 flex flex-col">
+						<div class="border-rad-3.2 overflow-hidden light-dark-bg p-6 bp:p-2">
+							<div class="h-24 bp:h-16">
+								<img class="centered-contain" src="/images/img/requirements-img2.png" alt="Картинка требований" />
+							</div>
+						</div>
+
+						<div class="border-rad-3.2 overflow-hidden mt-1.2 white-bg p-4 bp:p-2 flex flex-col">
+							<span class="textcol-gray-200 font-secondary uppercase fw-600 bp:text-1.5 lh-1-2 bp:lh-1 tracking-6%">02</span>
+							<span class="text-2.4 bp:text-2 mt-2.4 bp:mt-1.2 textcol-black-primary">На вашем сайте есть страницы, оптимизированные под продвигаемые фразы</span>
+						</div>
+					</div>
+					<div class="border-solid border-0.2 border-rad-4 bordergradcx-light-stroke p-1.2 flex flex-col">
+						<div class="border-rad-3.2 overflow-hidden light-dark-bg p-6 bp:p-2">
+							<div class="h-24 bp:h-16">
+								<img class="centered-contain" src="/images/img/requirements-img3.png" alt="Картинка требований" />
+							</div>
+						</div>
+
+						<div class="border-rad-3.2 overflow-hidden mt-1.2 white-bg p-4 bp:p-2 flex flex-col">
+							<span class="textcol-gray-200 font-secondary uppercase fw-600 bp:text-1.5 lh-1-2 bp:lh-1 tracking-6%">03</span>
+							<span class="text-2.4 bp:text-2 mt-2.4 bp:mt-1.2 textcol-black-primary">Ваш сайт не нарушает законы и не противоречит морально-этическим нормам</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mt-23 bp:mt-12 grid service__qa-grid grid gap-4.4 bp:gap-4">
+				<div class="service__qa-grid-logo flex flex-col relative bp:mt-22">
+					<span class="service__requirements-grid-1 text-7 bp:text-3.3 textgrad-light-grey fw-300 uppercase lh-0-9"> Вопрос-ответ </span>
+					<span class="text-2.4 bp:text-1.6 mt-2.4 bp:mt-1.6">
+						Получите ответы на многие <br />
+						практические вопросы о продвижении<br />
+						с помощью нашего сервиса
+					</span>
+					<div class="service__qa-grid-logo-img absolute h-97 w-auto z-1- bp:h-50 bp:overflow-hidden bp:w-100vw">
+						<img class="h-full w-auto" src="/images/img/qa-bg.png" alt="Картинка слайдера" />
+					</div>
+				</div>
+				<div class="service__qa-grid-content flex flex-col gap-1.6 bp:gap-2" data-qa-accordion data-qa-mobile-limit="10">
+					<div class="flex gap-2.4 bp:border-solid bp:border-t-0.2 bordercol-dark-grey bp:pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">01</span>
+								<span class="text-2.4 bp:text-1.8">Когда ждать результатов продвижения сайта?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="true">
+							<svg class="button--icon orange-bg icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+
+					<div class="flex gap-2.4 border-solid border-t-0.2 bordercol-dark-grey pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">02</span>
+								<span class="text-2.4 bp:text-1.8">Гарантируете ли вы выход в ТОП Яндекса и Google?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2 hidden" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="false">
+							<svg class="button--icon icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="flex gap-2.4 border-solid border-t-0.2 bordercol-dark-grey pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">03</span>
+								<span class="text-2.4 bp:text-1.8">Когда ждать результатов продвижения сайта?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="true">
+							<svg class="button--icon orange-bg icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+
+					<div class="flex gap-2.4 border-solid border-t-0.2 bordercol-dark-grey pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">04</span>
+								<span class="text-2.4 bp:text-1.8">Гарантируете ли вы выход в ТОП Яндекса и Google?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2 hidden" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="false">
+							<svg class="button--icon icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="flex gap-2.4 border-solid border-t-0.2 bordercol-dark-grey pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">05</span>
+								<span class="text-2.4 bp:text-1.8">Когда ждать результатов продвижения сайта?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="true">
+							<svg class="button--icon orange-bg icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+
+					<div class="flex gap-2.4 border-solid border-t-0.2 bordercol-dark-grey pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">06</span>
+								<span class="text-2.4 bp:text-1.8">Гарантируете ли вы выход в ТОП Яндекса и Google?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2 hidden" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="false">
+							<svg class="button--icon icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="flex gap-2.4 border-solid border-t-0.2 bordercol-dark-grey pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">07</span>
+								<span class="text-2.4 bp:text-1.8">Когда ждать результатов продвижения сайта?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="true">
+							<svg class="button--icon orange-bg icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+
+					<div class="flex gap-2.4 border-solid border-t-0.2 bordercol-dark-grey pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">08</span>
+								<span class="text-2.4 bp:text-1.8">Гарантируете ли вы выход в ТОП Яндекса и Google?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2 hidden" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="false">
+							<svg class="button--icon icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="flex gap-2.4 border-solid border-t-0.2 bordercol-dark-grey pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">09</span>
+								<span class="text-2.4 bp:text-1.8">Когда ждать результатов продвижения сайта?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="true">
+							<svg class="button--icon orange-bg icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+
+					<div class="flex gap-2.4 border-solid border-t-0.2 bordercol-dark-grey pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">10</span>
+								<span class="text-2.4 bp:text-1.8">Гарантируете ли вы выход в ТОП Яндекса и Google?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2 hidden" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="false">
+							<svg class="button--icon icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="flex gap-2.4 border-solid border-t-0.2 bordercol-dark-grey pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">11</span>
+								<span class="text-2.4 bp:text-1.8">Когда ждать результатов продвижения сайта?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="true">
+							<svg class="button--icon orange-bg icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+
+					<div class="flex gap-2.4 border-solid border-t-0.2 bordercol-dark-grey pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">12</span>
+								<span class="text-2.4 bp:text-1.8">Гарантируете ли вы выход в ТОП Яндекса и Google?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2 hidden" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="false">
+							<svg class="button--icon icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="flex gap-2.4 border-solid border-t-0.2 bordercol-dark-grey pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">13</span>
+								<span class="text-2.4 bp:text-1.8">Когда ждать результатов продвижения сайта?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="true">
+							<svg class="button--icon orange-bg icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+
+					<div class="flex gap-2.4 border-solid border-t-0.2 bordercol-dark-grey pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">14</span>
+								<span class="text-2.4 bp:text-1.8">Гарантируете ли вы выход в ТОП Яндекса и Google?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2 hidden" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="false">
+							<svg class="button--icon icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="flex gap-2.4 border-solid border-t-0.2 bordercol-dark-grey pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">15</span>
+								<span class="text-2.4 bp:text-1.8">Когда ждать результатов продвижения сайта?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="true">
+							<svg class="button--icon orange-bg icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+
+					<div class="flex gap-2.4 border-solid border-t-0.2 bordercol-dark-grey pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">16</span>
+								<span class="text-2.4 bp:text-1.8">Гарантируете ли вы выход в ТОП Яндекса и Google?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2 hidden" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="false">
+							<svg class="button--icon icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="flex gap-2.4 border-solid border-t-0.2 bordercol-dark-grey pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">17</span>
+								<span class="text-2.4 bp:text-1.8">Когда ждать результатов продвижения сайта?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="true">
+							<svg class="button--icon orange-bg icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+
+					<div class="flex gap-2.4 border-solid border-t-0.2 bordercol-dark-grey pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">18</span>
+								<span class="text-2.4 bp:text-1.8">Гарантируете ли вы выход в ТОП Яндекса и Google?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2 hidden" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="false">
+							<svg class="button--icon icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="flex gap-2.4 border-solid border-t-0.2 bordercol-dark-grey pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">19</span>
+								<span class="text-2.4 bp:text-1.8">Когда ждать результатов продвижения сайта?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="true">
+							<svg class="button--icon orange-bg icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+
+					<div class="flex gap-2.4 border-solid border-t-0.2 bordercol-dark-grey pt-2 justify-between" data-qa-item>
+						<div class="flex flex-col gap-1.2 justify-center">
+							<div class="flex gap-2.4">
+								<span class="textcol-gray-200 text-1.6 uppercase text-secondary only-desktop mb-auto">20</span>
+								<span class="text-2.4 bp:text-1.8">Гарантируете ли вы выход в ТОП Яндекса и Google?</span>
+							</div>
+							<span class="textcol-gray-200 text-1.8 bp:text-1.5 text-secondary lh-1-2 hidden" data-qa-answer> Наши технологии позволяют вашему сайту быстро подняться на лидирующие позиции в любых нишах, независимо от сложности конкуренции </span>
+						</div>
+						<button type="button" class="bp:mt-auto" data-qa-toggle aria-expanded="false">
+							<svg class="button--icon icon icon-white h-2.4 w-2.4 p-1.6" data-qa-icon>
+								<use href="/images/svg/svgs.svg#icon-download2"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="border-solid border-t-0.2 bordercol-dark-grey pt-2 only-mobile" data-qa-mobile-toggle-wrap>
+						<button type="button" data-qa-mobile-toggle data-qa-mobile-show-text="показать все" data-qa-mobile-hide-text="скрыть" aria-expanded="false">
+							<span class="font-secondary text-1.5 fw-600 textcol-orange-dark uppercase underline" data-qa-mobile-toggle-label> показать все </span>
+						</button>
+					</div>
+				</div>
+				<div class="service__qa-grid-feedback flex flex-col mt-40 bp:mt-0">
+					<span class="text-2 bp:text-1.6 lh-1-2 bp:lh-1-1">
+						Если вы не нашли ответа <br />
+						на свой вопрос, напишите его <br />
+						в службу технической поддержки <br />
+						<span class="textcol-orange-light">support@seostronghold.ru </span>
+					</span>
+
+					<span class="text-1.4 bp:text-1.3 font-secondary uppercase opacity-0-3 mt-2.4">
+						Ответим в течение 24 часов <br />
+						с понедельника по пятницу
+					</span>
+				</div>
+			</section>
+
+			<section class="mt-21 bp:mt-12 flex flex-col" data-cases-toggle data-cases-desktop-limit="9" data-cases-mobile-limit="4">
+				<span class="text-8 bp:text-3.3 textgrad-light-grey fw-300 uppercase lh-1-2 mx-auto"> лента кейсов </span>
+				<div class="service__case-grid grid mt-7 bp:mt-4 gap-4.4" data-cases-list>
+					<div class="border-solid border-0.2 border-rad-4 bordergradcx-light-stroke px-3.2 py-4.4 bp:px-2 bp:py-2.4 flex flex-col">
+						<span class="textcol-gray-200 uppercase fw-600 bp:text-1.3 lh-1-2 tracking-6%">20.04.25</span>
+						<div class="flex justify-between items-center bp:flex-col bp:items-start">
+							<span class="text-2.8 bp:text-2.4 mt-0.8">#недвижимость</span>
+							<a href="/" class="text-1.6 bp:text-1.5 mt-0.8 font-secondary underline bp:mt-3">в топвизор</a>
+						</div>
+
+						<div class="light-dark-bg border-rad-2.4 overflow-hidden h-31 bp:h-20 flex items-center justify-center mt-4 bp:mt-3.2">
+							<img class="centered-contain" src="/images/img/sheet.png" alt="Картинка кейса" />
+						</div>
+					</div>
+					<div class="border-solid border-0.2 border-rad-4 bordergradcx-light-stroke px-3.2 py-4.4 bp:px-2 bp:py-2.4 flex flex-col">
+						<span class="textcol-gray-200 uppercase fw-600 bp:text-1.3 lh-1-2 tracking-6%">20.04.25</span>
+						<div class="flex justify-between items-center bp:flex-col bp:items-start">
+							<span class="text-2.8 bp:text-2.4 mt-0.8">#недвижимость</span>
+							<a href="/" class="text-1.6 bp:text-1.5 mt-0.8 font-secondary underline bp:mt-3">в топвизор</a>
+						</div>
+
+						<div class="light-dark-bg border-rad-2.4 overflow-hidden h-31 bp:h-20 flex items-center justify-center mt-4 bp:mt-3.2">
+							<img class="centered-contain" src="/images/img/sheet.png" alt="Картинка кейса" />
+						</div>
+					</div>
+					<div class="border-solid border-0.2 border-rad-4 bordergradcx-light-stroke px-3.2 py-4.4 bp:px-2 bp:py-2.4 flex flex-col">
+						<span class="textcol-gray-200 uppercase fw-600 bp:text-1.3 lh-1-2 tracking-6%">20.04.25</span>
+						<div class="flex justify-between items-center bp:flex-col bp:items-start">
+							<span class="text-2.8 bp:text-2.4 mt-0.8">#недвижимость</span>
+							<a href="/" class="text-1.6 bp:text-1.5 mt-0.8 font-secondary underline bp:mt-3">в топвизор</a>
+						</div>
+
+						<div class="light-dark-bg border-rad-2.4 overflow-hidden h-31 bp:h-20 flex items-center justify-center mt-4 bp:mt-3.2">
+							<img class="centered-contain" src="/images/img/sheet.png" alt="Картинка кейса" />
+						</div>
+					</div>
+					<div class="border-solid border-0.2 border-rad-4 bordergradcx-light-stroke px-3.2 py-4.4 bp:px-2 bp:py-2.4 flex flex-col">
+						<span class="textcol-gray-200 uppercase fw-600 bp:text-1.3 lh-1-2 tracking-6%">20.04.25</span>
+						<div class="flex justify-between items-center bp:flex-col bp:items-start">
+							<span class="text-2.8 bp:text-2.4 mt-0.8">#недвижимость</span>
+							<a href="/" class="text-1.6 bp:text-1.5 mt-0.8 font-secondary underline bp:mt-3">в топвизор</a>
+						</div>
+
+						<div class="light-dark-bg border-rad-2.4 overflow-hidden h-31 bp:h-20 flex items-center justify-center mt-4 bp:mt-3.2">
+							<img class="centered-contain" src="/images/img/sheet.png" alt="Картинка кейса" />
+						</div>
+					</div>
+					<div class="border-solid border-0.2 border-rad-4 bordergradcx-light-stroke px-3.2 py-4.4 bp:px-2 bp:py-2.4 flex flex-col">
+						<span class="textcol-gray-200 uppercase fw-600 bp:text-1.3 lh-1-2 tracking-6%">20.04.25</span>
+						<div class="flex justify-between items-center bp:flex-col bp:items-start">
+							<span class="text-2.8 bp:text-2.4 mt-0.8">#недвижимость</span>
+							<a href="/" class="text-1.6 bp:text-1.5 mt-0.8 font-secondary underline bp:mt-3">в топвизор</a>
+						</div>
+
+						<div class="light-dark-bg border-rad-2.4 overflow-hidden h-31 bp:h-20 flex items-center justify-center mt-4 bp:mt-3.2">
+							<img class="centered-contain" src="/images/img/sheet.png" alt="Картинка кейса" />
+						</div>
+					</div>
+					<div class="border-solid border-0.2 border-rad-4 bordergradcx-light-stroke px-3.2 py-4.4 bp:px-2 bp:py-2.4 flex flex-col">
+						<span class="textcol-gray-200 uppercase fw-600 bp:text-1.3 lh-1-2 tracking-6%">20.04.25</span>
+						<div class="flex justify-between items-center bp:flex-col bp:items-start">
+							<span class="text-2.8 bp:text-2.4 mt-0.8">#недвижимость</span>
+							<a href="/" class="text-1.6 bp:text-1.5 mt-0.8 font-secondary underline bp:mt-3">в топвизор</a>
+						</div>
+
+						<div class="light-dark-bg border-rad-2.4 overflow-hidden h-31 bp:h-20 flex items-center justify-center mt-4 bp:mt-3.2">
+							<img class="centered-contain" src="/images/img/sheet.png" alt="Картинка кейса" />
+						</div>
+					</div>
+					<div class="border-solid border-0.2 border-rad-4 bordergradcx-light-stroke px-3.2 py-4.4 bp:px-2 bp:py-2.4 flex flex-col">
+						<span class="textcol-gray-200 uppercase fw-600 bp:text-1.3 lh-1-2 tracking-6%">20.04.25</span>
+						<div class="flex justify-between items-center bp:flex-col bp:items-start">
+							<span class="text-2.8 bp:text-2.4 mt-0.8">#недвижимость</span>
+							<a href="/" class="text-1.6 bp:text-1.5 mt-0.8 font-secondary underline bp:mt-3">в топвизор</a>
+						</div>
+
+						<div class="light-dark-bg border-rad-2.4 overflow-hidden h-31 bp:h-20 flex items-center justify-center mt-4 bp:mt-3.2">
+							<img class="centered-contain" src="/images/img/sheet.png" alt="Картинка кейса" />
+						</div>
+					</div>
+					<div class="border-solid border-0.2 border-rad-4 bordergradcx-light-stroke px-3.2 py-4.4 bp:px-2 bp:py-2.4 flex flex-col">
+						<span class="textcol-gray-200 uppercase fw-600 bp:text-1.3 lh-1-2 tracking-6%">20.04.25</span>
+						<div class="flex justify-between items-center bp:flex-col bp:items-start">
+							<span class="text-2.8 bp:text-2.4 mt-0.8">#недвижимость</span>
+							<a href="/" class="text-1.6 bp:text-1.5 mt-0.8 font-secondary underline bp:mt-3">в топвизор</a>
+						</div>
+
+						<div class="light-dark-bg border-rad-2.4 overflow-hidden h-31 bp:h-20 flex items-center justify-center mt-4 bp:mt-3.2">
+							<img class="centered-contain" src="/images/img/sheet.png" alt="Картинка кейса" />
+						</div>
+					</div>
+					<div class="border-solid border-0.2 border-rad-4 bordergradcx-light-stroke px-3.2 py-4.4 bp:px-2 bp:py-2.4 flex flex-col">
+						<span class="textcol-gray-200 uppercase fw-600 bp:text-1.3 lh-1-2 tracking-6%">20.04.25</span>
+						<div class="flex justify-between items-center bp:flex-col bp:items-start">
+							<span class="text-2.8 bp:text-2.4 mt-0.8">#недвижимость</span>
+							<a href="/" class="text-1.6 bp:text-1.5 mt-0.8 font-secondary underline bp:mt-3">в топвизор</a>
+						</div>
+
+						<div class="light-dark-bg border-rad-2.4 overflow-hidden h-31 bp:h-20 flex items-center justify-center mt-4 bp:mt-3.2">
+							<img class="centered-contain" src="/images/img/sheet.png" alt="Картинка кейса" />
+						</div>
+					</div>
+					<div class="border-solid border-0.2 border-rad-4 bordergradcx-light-stroke px-3.2 py-4.4 bp:px-2 bp:py-2.4 flex flex-col">
+						<span class="textcol-gray-200 uppercase fw-600 bp:text-1.3 lh-1-2 tracking-6%">20.04.25</span>
+						<div class="flex justify-between items-center bp:flex-col bp:items-start">
+							<span class="text-2.8 bp:text-2.4 mt-0.8">#недвижимость</span>
+							<a href="/" class="text-1.6 bp:text-1.5 mt-0.8 font-secondary underline bp:mt-3">в топвизор</a>
+						</div>
+
+						<div class="light-dark-bg border-rad-2.4 overflow-hidden h-31 bp:h-20 flex items-center justify-center mt-4 bp:mt-3.2">
+							<img class="centered-contain" src="/images/img/sheet.png" alt="Картинка кейса" />
+						</div>
+					</div>
+				</div>
+				<button class="button button--orange relative pl-4.2 pr-4.2 mx-auto mt-7 bp:mt-4" data-cases-toggle-button data-cases-collapsed-text="показать еще" data-cases-expanded-text="скрыть" aria-expanded="false">
+					<span class="z-5" data-cases-toggle-label>показать еще</span>
+					<img class="centered-absolute absolute z-1- h-full w-full" src="/images/img/btn-bg.png" alt="Бг кнопки" />
+				</button>
+			</section>
+		</main>
+		<footer class="relative bp:overflow-hidden">
+			<div class="service__footer-grid grid mb-5.6 mt-24 bp:mb-10 bp:mt-12 gap-3.2 bp:gap-2.4 items-center global-padding-x">
+				<span class="service__footer-grid-year text-1.6 weight-600 lh-1-2 tracking-6% uppercase secondary-button bp:mb-6 w-fit bp:mx-auto">2025</span>
+				<a class="text-1.6 weight-600 lh-1-2 tracking-6% uppercase w-fit bp:mx-auto" href="/offer">оферта</a>
+				<a class="service__footer-grid-logo w-24 bp:w-17 mx-auto" href="/service">
+					<img src="/images/img/main-logo.png" alt="Лого" />
+				</a>
+				<a class="text-1.6 weight-600 lh-1-2 tracking-6% uppercase secondary-button w-fit bp:mx-auto" href="/conditions">Условия</a>
+				<a class="text-1.6 weight-600 lh-1-2 tracking-6% uppercase secondary-button w-fit bp:mx-auto" href="/contact">Контакты</a>
+			</div>
+			<div class="service__footer-img absolute h-90 z-1- bp:h-130 w-full">
+				<img class="h-full w-full bp:w-auto" src="/images/img/footer-bg.png" alt="Картинка бг футера" />
+			</div>
+		</footer>
+		@@include('html/components/service-request-modal.html')
+	</body>
+	@@include('html/base/scripts.html', { "pageScript": "service.js", "useSwiper": true })
+</html>

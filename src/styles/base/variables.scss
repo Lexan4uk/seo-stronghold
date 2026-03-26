@@ -1,0 +1,36 @@
+$bp: 768px;
+$_4k: 3840px;
+:root {
+	--color-back-bg: #111111;
+	--color-black-primary: #17191b;
+	--color-dark-grey: #222223;
+	--color-orange-dark: #e2840f;
+	--color-orange-light: #ff7a15;
+	--color-turquoise: #0ab5ad;
+	--color-blue: #2a88e6;
+	--color-pink: #d94080;
+	--color-white-primary: #ffffff;
+	--color-gray-200: #98a6c3;
+	--color-gradient-light-grey-x: linear-gradient(90deg, #d7ddea 0%, #676b72 100%);
+	--color-gradient-light-grey-y: linear-gradient(180deg, #d7ddeaa7 0%, #676b72 100%);
+
+	--color-gradient-light-stroke-x: linear-gradient(90deg, #202020 0%, #d7ddeaa7 45%, #202020 100%);
+	--color-gradient-light-stroke-y: linear-gradient(180deg, #202020 0%, #ffffff 16%, #202020 100%);
+
+	--color-gradient-dark-stroke-x: linear-gradient(90deg, #ffffff6c 0%, #0d0d0d6c 100%);
+	--color-gradient-dark-stroke-y: linear-gradient(180deg, #ffffff6c 0%, #0d0d0d6c 100%);
+
+	--color-gradient-light-grey: linear-gradient(180deg, #d7ddea 0%, #676b72 100%);
+	--color-gradient-light-stroke: linear-gradient(180deg, #202020 0%, #ffffff 16%, #202020 100%);
+	--color-gradient-dark-stroke: linear-gradient(180deg, #ffffff 0%, #0d0d0d 100%);
+	--color-gradient-orange-dark: linear-gradient(180deg, #e2840f 0%, #c55e0b 100%);
+
+	--color-gradient-turquoise: linear-gradient(180deg, #01b7a5 0%, #0e9397 100%);
+	--color-gradient-blue: linear-gradient(180deg, #389ced 0%, #2c72ce 100%);
+	--color-gradient-pink: linear-gradient(180deg, #e5459a 0%, #cc3a63 100%);
+
+	--color-gradient-orange-stroke-x: linear-gradient(90deg, #202020 0%, #ffb9636c 45%, #202020 100%);
+	--color-gradient-turquoise-stroke-x: linear-gradient(90deg, #202020 0%, #4bfff06c 45%, #202020 100%);
+	--color-gradient-blue-stroke-x: linear-gradient(90deg, #202020 0%, #75beff6c 45%, #202020 100%);
+	--color-gradient-pink-stroke-x: linear-gradient(90deg, #202020 0%, #ff93c86c 45%, #202020 100%);
+}

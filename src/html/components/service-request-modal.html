@@ -1,0 +1,53 @@
+<div class="service-request-modal global-padding-x" data-service-request-modal aria-hidden="true">
+	<div class="service-request-modal__backdrop" data-service-request-close></div>
+	<div class="service-request-modal__dialog relative overflow-hidden">
+		<button type="button" class="service-request-modal__close" data-service-request-close aria-label="Закрыть">
+			<svg class="icon w-3.2 h-3.2">
+				<use href="/images/svg/svgs.svg#icon-cross"></use>
+			</svg>
+		</button>
+
+		<div class="service-request-modal__state service-request-modal__state--form" data-service-request-state="form">
+			<div class="service-request-modal__inner flex flex-col items-center">
+				<div class="service-request-modal__title text-center uppercase">Заявка<br />на enterprise</div>
+				<div class="service-request-modal__line"></div>
+
+				<form class="service-request-form flex flex-col w-full items-center" data-service-request-form novalidate>
+					<label class="service-request-form__field">
+						<input class="service-request-form__control" type="text" name="name" placeholder="ИМЯ*" autocomplete="name" />
+						<span class="service-request-form__error hidden" data-error-for="name">Введите имя (минимум 2 символа)</span>
+					</label>
+
+					<label class="service-request-form__field">
+						<input class="service-request-form__control" type="email" name="email" placeholder="E-MAIL*" autocomplete="email" />
+						<span class="service-request-form__error hidden" data-error-for="email">Введите корректный e-mail</span>
+					</label>
+
+					<label class="service-request-form__field">
+						<input class="service-request-form__control" type="tel" name="phone" placeholder="+ 7 (___) ___ - __ - __" autocomplete="tel" />
+						<span class="service-request-form__error hidden" data-error-for="phone">Введите корректный телефон</span>
+					</label>
+
+					<div class="service-request-modal__line"></div>
+
+					<button type="submit" class="service-request-form__submit button relative mx-auto">
+						<span class="relative z-5">ОТПРАВИТЬ</span>
+						<img class="centered-absolute absolute h-full w-full" src="/images/png/btn-bg.png" alt="Бг кнопки" />
+					</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="service-request-modal__state service-request-modal__state--success hidden" data-service-request-state="success">
+			<div class="service-request-modal__inner flex flex-col items-center">
+				<div class="service-request-modal__title text-center uppercase">Ваша заявка<br />отправлена</div>
+				<div class="service-request-modal__line"></div>
+				<div class="service-request-modal__subtitle text-center">
+					Свяжемся с вами в течение 2х часов<br />
+					с понедельника по пятницу
+				</div>
+				<div class="service-request-modal__line"></div>
+			</div>
+		</div>
+	</div>
+</div>

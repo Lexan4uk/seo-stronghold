@@ -1,0 +1,11 @@
+.footer-service {
+}
+.footer-studio {
+}
+
+@include media-down($bp) {
+	.footer-service {
+	}
+	.footer-studio {
+	}
+}

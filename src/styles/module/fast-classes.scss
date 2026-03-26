@@ -1,0 +1,1112 @@
+$fc-sizes: (
+	'0': 0,
+	'0.1': 0.1rem,
+	'0.2': 0.2rem,
+	'0.4': 0.4rem,
+	'0.6': 0.6rem,
+	'0.8': 0.8rem,
+	'1': 1rem,
+	'1.1': 1.1rem,
+	'1.2': 1.2rem,
+	'1.3': 1.3rem,
+	'1.4': 1.4rem,
+	'1.5': 1.4rem,
+	'1.6': 1.6rem,
+	'1.7': 1.7rem,
+	'1.8': 1.8rem,
+	'2': 2rem,
+	'2.2': 2.2rem,
+	'2.4': 2.4rem,
+	'2.6': 2.6rem,
+	'2.8': 2.8rem,
+	'3': 3rem,
+	'3.2': 3.2rem,
+	'3.3': 3.3rem,
+	'3.4': 3.4rem,
+	'3.6': 3.6rem,
+	'3.8': 3.8rem,
+	'4': 4rem,
+	'4.2': 4.2rem,
+	'4.4': 4.4rem,
+	'4.6': 4.6rem,
+	'4.8': 4.8rem,
+	'5': 5rem,
+	'5.2': 5.2rem,
+	'5.4': 5.4rem,
+	'5.6': 5.6rem,
+	'5.8': 5.8rem,
+	'6': 6rem,
+	'6.2': 6.2rem,
+	'6.4': 6.4rem,
+	'6.6': 6.6rem,
+	'6.8': 6.8rem,
+	'7': 7rem,
+	'7.2': 7.2rem,
+	'7.4': 7.4rem,
+	'7.6': 7.6rem,
+	'7.8': 7.8rem,
+	'8': 8rem,
+	'8.2': 8.2rem,
+	'8.4': 8.4rem,
+	'8.6': 8.6rem,
+	'8.8': 8.8rem,
+	'9': 9rem,
+	'9.2': 9.2rem,
+	'9.4': 9.4rem,
+	'9.6': 9.6rem,
+	'9.8': 9.8rem,
+	'10': 10rem,
+	'11': 11rem,
+	'12': 12rem,
+	'13': 13rem,
+	'14': 14rem,
+	'15': 15rem,
+	'16': 16rem,
+	'16.6': 16.6rem,
+	'17': 17rem,
+	'18': 18rem,
+	'19': 19rem,
+	'20': 20rem,
+	'21': 21rem,
+	'22': 22rem,
+	'23': 23rem,
+	'24': 24rem,
+	'25': 25rem,
+	'26': 26rem,
+	'27': 27rem,
+	'28': 28rem,
+	'29': 29rem,
+	'30': 30rem,
+	'31': 31rem,
+	'32': 32rem,
+	'33': 33rem,
+	'34': 34rem,
+	'35': 35rem,
+	'36': 36rem,
+	'37': 37rem,
+	'38': 38rem,
+	'39': 39rem,
+	'40': 40rem,
+	'41': 41rem,
+	'42': 42rem,
+	'43': 43rem,
+	'44': 44rem,
+	'45': 45rem,
+	'46': 46rem,
+	'47': 47rem,
+	'48': 48rem,
+	'49': 49rem,
+	'50': 50rem,
+	'51': 51rem,
+	'52': 52rem,
+	'53': 53rem,
+	'54': 54rem,
+	'55': 55rem,
+	'56': 56rem,
+	'57': 57rem,
+	'58': 58rem,
+	'59': 59rem,
+	'60': 60rem,
+	'61': 61rem,
+	'62': 62rem,
+	'63': 63rem,
+	'64': 64rem,
+	'65': 65rem,
+	'66': 66rem,
+	'67': 67rem,
+	'68': 68rem,
+	'69': 69rem,
+	'70': 70rem,
+	'71': 71rem,
+	'72': 72rem,
+	'73': 73rem,
+	'74': 74rem,
+	'75': 75rem,
+	'76': 76rem,
+	'77': 77rem,
+	'78': 78rem,
+	'79': 79rem,
+	'80': 80rem,
+	'81': 81rem,
+	'82': 82rem,
+	'83': 83rem,
+	'84': 84rem,
+	'85': 85rem,
+	'86': 86rem,
+	'87': 87rem,
+	'88': 88rem,
+	'89': 89rem,
+	'90': 90rem,
+	'91': 91rem,
+	'92': 92rem,
+	'93': 93rem,
+	'94': 94rem,
+	'95': 95rem,
+	'96': 96rem,
+	'97': 97rem,
+	'98': 98rem,
+	'99': 99rem,
+	'100': 100rem,
+	'130': 130rem,
+	'999': 999rem,
+	'max': 100%,
+	'auto': auto,
+	'100vw': 100vw
+);
+$fc-colors: (
+	'back-bg': var(--color-back-bg),
+	'black-primary': var(--color-black-primary),
+	'dark-grey': var(--color-dark-grey),
+	'orange-dark': var(--color-orange-dark),
+	'orange-light': var(--color-orange-light),
+	'turquoise': var(--color-turquoise),
+	'blue': var(--color-blue),
+	'pink': var(--color-pink),
+	'white-primary': var(--color-white-primary),
+	'gray-200': var(--color-gray-200),
+	'gradient-light-grey': var(--color-gradient-light-grey),
+	'gradient-light-grey-x': var(--color-gradient-light-grey-x),
+	'gradient-light-grey-y': var(--color-gradient-light-grey-y),
+	'gradient-light-stroke': var(--color-gradient-light-stroke),
+	'gradient-light-stroke-x': var(--color-gradient-light-stroke-x),
+	'gradient-light-stroke-y': var(--color-gradient-light-stroke-y),
+	'gradient-dark-stroke': var(--color-gradient-dark-stroke),
+	'gradient-dark-stroke-x': var(--color-gradient-dark-stroke-x),
+	'gradient-dark-stroke-y': var(--color-gradient-dark-stroke-y),
+	'gradient-orange-dark': var(--color-gradient-orange-dark),
+	'gradient-turquoise': var(--color-gradient-turquoise),
+	'gradient-blue': var(--color-gradient-blue),
+	'gradient-pink': var(--color-gradient-pink),
+	'gradient-orange-stroke-x': var(--color-gradient-orange-stroke-x),
+	'gradient-turquoise-stroke-x': var(--color-gradient-turquoise-stroke-x),
+	'gradient-blue-stroke-x': var(--color-gradient-blue-stroke-x),
+	'gradient-pink-stroke-x': var(--color-gradient-pink-stroke-x),
+	'none': #ffffff00
+);
+$fc-text-gradients: (
+	'light-grey': var(--color-gradient-light-grey),
+	'light-grey-x': var(--color-gradient-light-grey-x),
+	'light-grey-y': var(--color-gradient-light-grey-y),
+	'light-stroke': var(--color-gradient-light-stroke),
+	'light-stroke-x': var(--color-gradient-light-stroke-x),
+	'light-stroke-y': var(--color-gradient-light-stroke-y),
+	'dark-stroke': var(--color-gradient-dark-stroke),
+	'dark-stroke-x': var(--color-gradient-dark-stroke-x),
+	'dark-stroke-y': var(--color-gradient-dark-stroke-y),
+	'orange-dark': var(--color-gradient-orange-dark),
+	'turquoise': var(--color-gradient-turquoise),
+	'blue': var(--color-gradient-blue),
+	'pink': var(--color-gradient-pink),
+	'orange-stroke-x': var(--color-gradient-orange-stroke-x),
+	'turquoise-stroke-x': var(--color-gradient-turquoise-stroke-x),
+	'blue-stroke-x': var(--color-gradient-blue-stroke-x),
+	'pink-stroke-x': var(--color-gradient-pink-stroke-x)
+);
+$fc-border-gradients-x: (
+	'light-grey': var(--color-gradient-light-grey-x),
+	'light-stroke': var(--color-gradient-light-stroke-x),
+	'dark-stroke': var(--color-gradient-dark-stroke-x),
+	'orange-stroke': var(--color-gradient-orange-stroke-x),
+	'turquoise-stroke': var(--color-gradient-turquoise-stroke-x),
+	'blue-stroke': var(--color-gradient-blue-stroke-x),
+	'pink-stroke': var(--color-gradient-pink-stroke-x)
+);
+$fc-border-gradients-y: (
+	'light-grey': var(--color-gradient-light-grey-y),
+	'light-stroke': var(--color-gradient-light-stroke-y),
+	'dark-stroke': var(--color-gradient-dark-stroke-y),
+	'orange-dark': var(--color-gradient-orange-dark)
+);
+$fc-tracking: (
+	'0': 0,
+	'1%': 1%,
+	'2%': 2%,
+	'3%': 3%,
+	'4%': 4%,
+	'5%': 5%,
+	'6%': 6%,
+	'1%-': -1%,
+	'2%-': -2%,
+	'3%-': -3%,
+	'4%-': -4%,
+	'5%-': -5%,
+	'6%-': -6%
+);
+@function str-replace($string, $search, $replace: '') {
+	$index: str-index($string, $search);
+
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+	}
+
+	@return $string;
+}
+
+@function escape-dot($name) {
+	@return str-replace($name, '.', '\\.');
+}
+
+@function escape-class($name) {
+	$escaped: str-replace($name, '.', '\\.');
+	$escaped: str-replace($escaped, '%', '\\%');
+	@return $escaped;
+}
+
+@mixin base-class($class) {
+	.#{$class} {
+		@content;
+	}
+}
+
+@mixin bp-class($class) {
+	@media (max-width: $bp) {
+		.bp\:#{$class} {
+			@content;
+		}
+	}
+}
+
+/* Layout */
+.block {
+	display: block;
+}
+.inline-block {
+	display: inline-block;
+}
+.inline {
+	display: inline;
+}
+.flex {
+	display: flex;
+}
+.inline-flex {
+	display: inline-flex;
+}
+.grid {
+	display: grid;
+}
+.hidden {
+	display: none;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+.flex-col {
+	flex-direction: column;
+}
+.flex-row-rev {
+	flex-direction: row-reverse;
+}
+.flex-col-rev {
+	flex-direction: column-reverse;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.flex-1 {
+	flex: 1;
+}
+.flex-2 {
+	flex: 2;
+}
+.flex-3 {
+	flex: 3;
+}
+.flex-4 {
+	flex: 4;
+}
+.flex-5 {
+	flex: 5;
+}
+.flex-unset {
+	flex: unset;
+}
+.visible {
+	visibility: visible;
+}
+.invisible {
+	visibility: hidden;
+}
+.collapsed {
+	visibility: collapse;
+}
+.items-start {
+	align-items: flex-start;
+}
+.items-center {
+	align-items: center;
+}
+.items-end {
+	align-items: flex-end;
+}
+.self-start {
+	align-self: flex-start;
+}
+.justify-start {
+	justify-content: flex-start;
+}
+.justify-center {
+	justify-content: center;
+}
+.justify-end {
+	justify-content: flex-end;
+}
+.justify-between {
+	justify-content: space-between;
+}
+
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+}
+.fixed {
+	position: fixed;
+}
+.sticky {
+	position: sticky;
+}
+
+.w-full {
+	width: 100%;
+}
+.h-full {
+	height: 100%;
+}
+.w-fit {
+	width: fit-content;
+}
+.h-fit {
+	height: fit-content;
+}
+.min-h-full {
+	min-height: 100%;
+}
+.min-w-full {
+	min-width: 100%;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+.overflow-auto {
+	overflow: auto;
+}
+.overflow-x-auto {
+	overflow-x: auto;
+}
+.overflow-y-auto {
+	overflow-y: auto;
+}
+/* Typography */
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.fw-300 {
+	font-weight: 300;
+}
+.fw-400 {
+	font-weight: 400;
+}
+.fw-500 {
+	font-weight: 500;
+}
+.fw-600 {
+	font-weight: 600;
+}
+.fw-700 {
+	font-weight: 700;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+.lowercase {
+	text-transform: lowercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+.lh-0-9 {
+	line-height: 0.9;
+}
+.lh-1 {
+	line-height: 1;
+}
+.lh-1-1 {
+	line-height: 1.1;
+}
+.lh-1-2 {
+	line-height: 1.2;
+}
+.lh-1-3 {
+	line-height: 1.2;
+}
+.lh-1-4 {
+	line-height: 1.4;
+}
+.lh-1-6 {
+	line-height: 1.6;
+}
+.border-solid {
+	border-style: solid;
+	border-width: 0;
+}
+.line-clamp-1,
+.line-clamp-2,
+.line-clamp-3,
+.line-clamp-4,
+.line-clamp-5,
+.line-clamp-6 {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.line-clamp-1 {
+	-webkit-line-clamp: 1;
+}
+.line-clamp-2 {
+	-webkit-line-clamp: 2;
+}
+.line-clamp-3 {
+	-webkit-line-clamp: 3;
+}
+.line-clamp-4 {
+	-webkit-line-clamp: 4;
+}
+.line-clamp-5 {
+	-webkit-line-clamp: 5;
+}
+.line-clamp-6 {
+	-webkit-line-clamp: 6;
+}
+
+.self-stretch {
+	align-self: stretch;
+}
+.cover {
+	object-fit: cover;
+}
+.contain {
+	object-fit: contain;
+}
+.fill {
+	object-fit: fill;
+}
+/* Spacing + size */
+@each $name, $value in $fc-sizes {
+	$suffix: escape-dot($name);
+
+	@include base-class('p-#{$suffix}') {
+		padding: $value;
+	}
+	@include base-class('pt-#{$suffix}') {
+		padding-top: $value;
+	}
+	@include base-class('pr-#{$suffix}') {
+		padding-right: $value;
+	}
+	@include base-class('pb-#{$suffix}') {
+		padding-bottom: $value;
+	}
+	@include base-class('pl-#{$suffix}') {
+		padding-left: $value;
+	}
+	@include base-class('px-#{$suffix}') {
+		padding-left: $value;
+		padding-right: $value;
+	}
+	@include base-class('py-#{$suffix}') {
+		padding-top: $value;
+		padding-bottom: $value;
+	}
+
+	@include base-class('m-#{$suffix}') {
+		margin: $value;
+	}
+	@include base-class('mt-#{$suffix}') {
+		margin-top: $value;
+	}
+	@include base-class('mr-#{$suffix}') {
+		margin-right: $value;
+	}
+	@include base-class('mb-#{$suffix}') {
+		margin-bottom: $value;
+	}
+	@include base-class('ml-#{$suffix}') {
+		margin-left: $value;
+	}
+	@include base-class('mx-#{$suffix}') {
+		margin-left: $value;
+		margin-right: $value;
+	}
+	@include base-class('my-#{$suffix}') {
+		margin-top: $value;
+		margin-bottom: $value;
+	}
+
+	@include base-class('gap-#{$suffix}') {
+		gap: $value;
+	}
+
+	@include base-class('w-#{$suffix}') {
+		width: $value;
+	}
+	@include base-class('h-#{$suffix}') {
+		height: $value;
+	}
+	@include base-class('max-w-#{$suffix}') {
+		max-width: $value;
+	}
+
+	@include base-class('border-#{$suffix}') {
+		border-width: $value;
+	}
+	@include base-class('border-t-#{$suffix}') {
+		border-top-width: $value;
+	}
+	@include base-class('border-r-#{$suffix}') {
+		border-right-width: $value;
+	}
+	@include base-class('border-b-#{$suffix}') {
+		border-bottom-width: $value;
+	}
+	@include base-class('border-l-#{$suffix}') {
+		border-left-width: $value;
+	}
+
+	@include base-class('top-#{$suffix}') {
+		top: $value;
+	}
+	@include base-class('right-#{$suffix}') {
+		right: $value;
+	}
+	@include base-class('bottom-#{$suffix}') {
+		bottom: $value;
+	}
+	@include base-class('left-#{$suffix}') {
+		left: $value;
+	}
+}
+
+@each $name, $value in $fc-sizes {
+	$suffix: escape-dot($name);
+	@include base-class('text-#{$suffix}') {
+		font-size: $value;
+	}
+}
+
+@each $name, $value in $fc-sizes {
+	$suffix: escape-dot($name);
+	@include base-class('rounded-#{$suffix}') {
+		border-radius: $value;
+	}
+	@include base-class('border-rad-#{$suffix}') {
+		border-radius: $value;
+	}
+}
+
+/* Letter spacing */
+@each $name, $value in $fc-tracking {
+	$suffix: escape-class($name);
+	@include base-class('tracking-#{$suffix}') {
+		letter-spacing: $value;
+	}
+}
+
+/* Colors */
+@each $name, $value in $fc-colors {
+	@include base-class('textcol-#{$name}') {
+		color: $value;
+	}
+	@include base-class('fill-#{$name}') {
+		fill: $value;
+	}
+	@include base-class('stroke-#{$name}') {
+		stroke: $value;
+	}
+	@include base-class('bordercol-#{$name}') {
+		border-color: $value;
+	}
+	@include base-class('borderfill-#{$name}') {
+		--fc-border-fill: #{$value};
+	}
+}
+
+/* Gradient text */
+@each $name, $value in $fc-text-gradients {
+	@include base-class('textgrad-#{$name}') {
+		display: inline-block;
+		background-image: $value;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: transparent;
+	}
+}
+
+/* Gradient borders */
+@each $name, $value in $fc-text-gradients {
+	@include base-class('bordergrad-#{$name}') {
+		border-image-source: $value;
+		border-image-slice: 1;
+	}
+}
+@each $name, $value in $fc-border-gradients-x {
+	@include base-class('bordergradx-#{$name}') {
+		border-image-source: $value;
+		border-image-slice: 1;
+	}
+}
+@each $name, $value in $fc-border-gradients-y {
+	@include base-class('bordergrady-#{$name}') {
+		border-image-source: $value;
+		border-image-slice: 1;
+	}
+}
+
+/* Gradient borders with radius support */
+@each $name, $value in $fc-text-gradients {
+	@include base-class('bordergradc-#{$name}') {
+		border-color: transparent;
+		border-image: none;
+		background-image: linear-gradient(var(--fc-border-fill, var(--color-back-bg)), var(--fc-border-fill, var(--color-back-bg))), $value;
+		background-origin: border-box;
+		background-clip: padding-box, border-box;
+		background-repeat: no-repeat;
+	}
+}
+@each $name, $value in $fc-border-gradients-x {
+	@include base-class('bordergradcx-#{$name}') {
+		border-color: transparent;
+		border-image: none;
+		background-image: linear-gradient(var(--fc-border-fill, var(--color-back-bg)), var(--fc-border-fill, var(--color-back-bg))), $value;
+		background-origin: border-box;
+		background-clip: padding-box, border-box;
+		background-repeat: no-repeat;
+	}
+}
+@each $name, $value in $fc-border-gradients-y {
+	@include base-class('bordergradcy-#{$name}') {
+		border-color: transparent;
+		border-image: none;
+		background-image: linear-gradient(var(--fc-border-fill, var(--color-back-bg)), var(--fc-border-fill, var(--color-back-bg))), $value;
+		background-origin: border-box;
+		background-clip: padding-box, border-box;
+		background-repeat: no-repeat;
+	}
+}
+
+/* Breakpoint variants (always after base) */
+@include bp-class('block') {
+	display: block;
+}
+@include bp-class('inline-block') {
+	display: inline-block;
+}
+@include bp-class('inline') {
+	display: inline;
+}
+@include bp-class('flex') {
+	display: flex;
+}
+@include bp-class('inline-flex') {
+	display: inline-flex;
+}
+@include bp-class('grid') {
+	display: grid;
+}
+@include bp-class('hidden') {
+	display: none;
+}
+@include bp-class('visible') {
+	visibility: visible;
+}
+@include bp-class('invisible') {
+	visibility: hidden;
+}
+@include bp-class('collapsed') {
+	visibility: collapse;
+}
+
+@include bp-class('flex-row') {
+	flex-direction: row;
+}
+@include bp-class('flex-col') {
+	flex-direction: column;
+}
+@include bp-class('flex-row-rev') {
+	flex-direction: row-reverse;
+}
+@include bp-class('flex-col-rev') {
+	flex-direction: column-reverse;
+}
+@include bp-class('flex-wrap') {
+	flex-wrap: wrap;
+}
+@include bp-class('flex-1') {
+	flex: 1;
+}
+@include bp-class('flex-unset') {
+	flex: unset;
+}
+@include bp-class('flex-2') {
+	flex: 2;
+}
+@include bp-class('flex-3') {
+	flex: 3;
+}
+@include bp-class('flex-4') {
+	flex: 4;
+}
+@include bp-class('flex-5') {
+	flex: 5;
+}
+
+@include bp-class('items-start') {
+	align-items: flex-start;
+}
+@include bp-class('items-center') {
+	align-items: center;
+}
+@include bp-class('items-end') {
+	align-items: flex-end;
+}
+@include bp-class('justify-start') {
+	justify-content: flex-start;
+}
+@include bp-class('justify-center') {
+	justify-content: center;
+}
+@include bp-class('justify-end') {
+	justify-content: flex-end;
+}
+@include bp-class('justify-between') {
+	justify-content: space-between;
+}
+
+@include bp-class('relative') {
+	position: relative;
+}
+@include bp-class('absolute') {
+	position: absolute;
+}
+@include bp-class('fixed') {
+	position: fixed;
+}
+@include bp-class('sticky') {
+	position: sticky;
+}
+
+@include bp-class('w-full') {
+	width: 100%;
+}
+@include bp-class('h-full') {
+	height: 100%;
+}
+@include bp-class('w-fit') {
+	width: fit-content;
+}
+@include bp-class('h-fit') {
+	height: fit-content;
+}
+@include bp-class('min-h-full') {
+	min-height: 100%;
+}
+@include bp-class('min-w-full') {
+	min-width: 100%;
+}
+
+@include bp-class('overflow-hidden') {
+	overflow: hidden;
+}
+@include bp-class('overflow-auto') {
+	overflow: auto;
+}
+@include bp-class('overflow-y-auto') {
+	overflow-y: auto;
+}
+@include bp-class('overflow-x-auto') {
+	overflow-x: auto;
+}
+
+@include bp-class('text-left') {
+	text-align: left;
+}
+@include bp-class('text-center') {
+	text-align: center;
+}
+@include bp-class('text-right') {
+	text-align: right;
+}
+
+@include bp-class('fw-400') {
+	font-weight: 400;
+}
+@include bp-class('fw-500') {
+	font-weight: 500;
+}
+@include bp-class('fw-600') {
+	font-weight: 600;
+}
+@include bp-class('fw-700') {
+	font-weight: 700;
+}
+
+@include bp-class('uppercase') {
+	text-transform: uppercase;
+}
+@include bp-class('lowercase') {
+	text-transform: lowercase;
+}
+@include bp-class('capitalize') {
+	text-transform: capitalize;
+}
+@include bp-class('lh-0-9') {
+	line-height: 0.9;
+}
+@include bp-class('lh-1') {
+	line-height: 1;
+}
+@include bp-class('lh-1-1') {
+	line-height: 1.1;
+}
+@include bp-class('lh-1-2') {
+	line-height: 1.2;
+}
+@include bp-class('lh-1-3') {
+	line-height: 1.2;
+}
+@include bp-class('lh-1-4') {
+	line-height: 1.4;
+}
+@include bp-class('lh-1-6') {
+	line-height: 1.6;
+}
+@include bp-class('border-solid') {
+	border-style: solid;
+	border-width: 0;
+}
+@include bp-class('self-stretch') {
+	align-self: stretch;
+}
+
+@each $clamp in 1, 2, 3, 4, 5, 6 {
+	@include bp-class('line-clamp-#{$clamp}') {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-webkit-line-clamp: $clamp;
+	}
+}
+
+@each $name, $value in $fc-sizes {
+	$suffix: escape-dot($name);
+
+	@include bp-class('p-#{$suffix}') {
+		padding: $value;
+	}
+	@include bp-class('pt-#{$suffix}') {
+		padding-top: $value;
+	}
+	@include bp-class('pr-#{$suffix}') {
+		padding-right: $value;
+	}
+	@include bp-class('pb-#{$suffix}') {
+		padding-bottom: $value;
+	}
+	@include bp-class('pl-#{$suffix}') {
+		padding-left: $value;
+	}
+	@include bp-class('px-#{$suffix}') {
+		padding-left: $value;
+		padding-right: $value;
+	}
+	@include bp-class('py-#{$suffix}') {
+		padding-top: $value;
+		padding-bottom: $value;
+	}
+
+	@include bp-class('m-#{$suffix}') {
+		margin: $value;
+	}
+	@include bp-class('mt-#{$suffix}') {
+		margin-top: $value;
+	}
+	@include bp-class('mr-#{$suffix}') {
+		margin-right: $value;
+	}
+	@include bp-class('mb-#{$suffix}') {
+		margin-bottom: $value;
+	}
+	@include bp-class('ml-#{$suffix}') {
+		margin-left: $value;
+	}
+	@include bp-class('mx-#{$suffix}') {
+		margin-left: $value;
+		margin-right: $value;
+	}
+	@include bp-class('my-#{$suffix}') {
+		margin-top: $value;
+		margin-bottom: $value;
+	}
+
+	@include bp-class('gap-#{$suffix}') {
+		gap: $value;
+	}
+
+	@include bp-class('w-#{$suffix}') {
+		width: $value;
+	}
+	@include bp-class('h-#{$suffix}') {
+		height: $value;
+	}
+	@include bp-class('max-w-#{$suffix}') {
+		max-width: $value;
+	}
+	@include bp-class('border-#{$suffix}') {
+		border-width: $value;
+	}
+	@include bp-class('border-t-#{$suffix}') {
+		border-top-width: $value;
+	}
+	@include bp-class('border-r-#{$suffix}') {
+		border-right-width: $value;
+	}
+	@include bp-class('border-b-#{$suffix}') {
+		border-bottom-width: $value;
+	}
+	@include bp-class('border-l-#{$suffix}') {
+		border-left-width: $value;
+	}
+
+	@include bp-class('top-#{$suffix}') {
+		top: $value;
+	}
+	@include bp-class('right-#{$suffix}') {
+		right: $value;
+	}
+	@include bp-class('bottom-#{$suffix}') {
+		bottom: $value;
+	}
+	@include bp-class('left-#{$suffix}') {
+		left: $value;
+	}
+}
+
+@each $name, $value in $fc-sizes {
+	$suffix: escape-dot($name);
+	@include bp-class('text-#{$suffix}') {
+		font-size: $value;
+	}
+}
+
+@each $name, $value in $fc-sizes {
+	$suffix: escape-dot($name);
+	@include bp-class('rounded-#{$suffix}') {
+		border-radius: $value;
+	}
+	@include bp-class('border-r-#{$suffix}') {
+		border-radius: $value;
+	}
+}
+
+@each $name, $value in $fc-tracking {
+	$suffix: escape-class($name);
+	@include bp-class('tracking-#{$suffix}') {
+		letter-spacing: $value;
+	}
+}
+
+@each $name, $value in $fc-colors {
+	@include bp-class('textcol-#{$name}') {
+		color: $value;
+	}
+	@include bp-class('fill-#{$name}') {
+		fill: $value;
+	}
+	@include bp-class('stroke-#{$name}') {
+		stroke: $value;
+	}
+	@include bp-class('bordercol-#{$name}') {
+		border-color: $value;
+	}
+	@include bp-class('borderfill-#{$name}') {
+		--fc-border-fill: #{$value};
+	}
+}
+
+@each $name, $value in $fc-text-gradients {
+	@include bp-class('textgrad-#{$name}') {
+		display: inline-block;
+		background-image: $value;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: transparent;
+	}
+}
+
+@each $name, $value in $fc-text-gradients {
+	@include bp-class('bordergrad-#{$name}') {
+		border-image-source: $value;
+		border-image-slice: 1;
+	}
+}
+@each $name, $value in $fc-border-gradients-x {
+	@include bp-class('bordergradx-#{$name}') {
+		border-image-source: $value;
+		border-image-slice: 1;
+	}
+}
+@each $name, $value in $fc-border-gradients-y {
+	@include bp-class('bordergrady-#{$name}') {
+		border-image-source: $value;
+		border-image-slice: 1;
+	}
+}
+
+@each $name, $value in $fc-text-gradients {
+	@include bp-class('bordergradc-#{$name}') {
+		border-color: transparent;
+		border-image: none;
+		background-image: linear-gradient(var(--fc-border-fill, var(--color-back-bg)), var(--fc-border-fill, var(--color-back-bg))), $value;
+		background-origin: border-box;
+		background-clip: padding-box, border-box;
+		background-repeat: no-repeat;
+	}
+}
+@each $name, $value in $fc-border-gradients-x {
+	@include bp-class('bordergradcx-#{$name}') {
+		border-color: transparent;
+		border-image: none;
+		background-image: linear-gradient(var(--fc-border-fill, var(--color-back-bg)), var(--fc-border-fill, var(--color-back-bg))), $value;
+		background-origin: border-box;
+		background-clip: padding-box, border-box;
+		background-repeat: no-repeat;
+	}
+}
+@each $name, $value in $fc-border-gradients-y {
+	@include bp-class('bordergradcy-#{$name}') {
+		border-color: transparent;
+		border-image: none;
+		background-image: linear-gradient(var(--fc-border-fill, var(--color-back-bg)), var(--fc-border-fill, var(--color-back-bg))), $value;
+		background-origin: border-box;
+		background-clip: padding-box, border-box;
+		background-repeat: no-repeat;
+	}
+}
