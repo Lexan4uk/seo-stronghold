@@ -113,7 +113,12 @@ body.mob-menu-open {
 		}
 	}
 }
-
+.box-sizing-borderbox {
+	box-sizing: border-box;
+}
+.box-sizing-contentbox {
+	box-sizing: content-box;
+}
 .button {
 	transition: transform 0.2s ease;
 	&:hover {

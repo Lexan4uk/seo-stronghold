@@ -31,55 +31,89 @@ function initServiceCasesSwiper() {
 		slidesPerView: 2,
 		spaceBetween: toRuntimePx(24)
 	})
-
-	const initialParams = getSwiperParams()
-	const swiper = new Swiper(swiperElement, {
-		slidesPerView: initialParams.slidesPerView,
-		spaceBetween: initialParams.spaceBetween,
-		speed: 500,
-		breakpoints: {
-			0: {
-				slidesPerView: 1,
-				spaceBetween: toRuntimePx(16)
-			},
-			769: {
-				slidesPerView: 2,
-				spaceBetween: toRuntimePx(44)
-			}
+	const getBreakpointParams = () => ({
+		0: {
+			slidesPerView: 1,
+			spaceBetween: toRuntimePx(16)
 		},
-		navigation: {
-			prevEl: prevButton,
-			nextEl: nextButton
-		},
-		pagination: {
-			el: paginationElement,
-			clickable: true,
-			bulletClass: 'service__swiper-dot',
-			bulletActiveClass: 'service__swiper-dot--active',
-			renderBullet(index, className) {
-				return `<button type="button" class="${className}" aria-label="Перейти на слайд ${index + 1}"></button>`
-			}
-		},
-		on: {
-			init(swiperInstance) {
-				updateEdgeNumbers(swiperInstance)
-			},
-			slideChange(swiperInstance) {
-				updateEdgeNumbers(swiperInstance)
-			}
+		769: {
+			slidesPerView: 2,
+			spaceBetween: toRuntimePx(44)
 		}
 	})
+	const mobileQuery = window.matchMedia('(max-width: 768px)')
+	let isMobileViewport = mobileQuery.matches
+	let swiper = null
+
+	const createSwiper = initialSlide => {
+		const initialParams = getSwiperParams()
+
+		swiper = new Swiper(swiperElement, {
+			slidesPerView: initialParams.slidesPerView,
+			spaceBetween: initialParams.spaceBetween,
+			speed: 500,
+			breakpoints: getBreakpointParams(),
+			navigation: {
+				prevEl: prevButton,
+				nextEl: nextButton
+			},
+			pagination: {
+				el: paginationElement,
+				clickable: true,
+				bulletClass: 'service__swiper-dot',
+				bulletActiveClass: 'service__swiper-dot--active',
+				renderBullet(index, className) {
+					return `<button type="button" class="${className}" aria-label="Перейти на слайд ${index + 1}"></button>`
+				}
+			},
+			on: {
+				init(swiperInstance) {
+					updateEdgeNumbers(swiperInstance)
+				},
+				slideChange(swiperInstance) {
+					updateEdgeNumbers(swiperInstance)
+				}
+			}
+		})
+
+		if (typeof initialSlide === 'number' && initialSlide > 0) {
+			swiper.slideTo(Math.min(initialSlide, totalSlides - 1), 0, false)
+			updateEdgeNumbers(swiper)
+		}
+	}
+
+	const recreateSwiper = () => {
+		const currentSlide = swiper ? swiper.activeIndex : 0
+
+		if (swiper && !swiper.destroyed) {
+			swiper.destroy(true, true)
+		}
+
+		createSwiper(currentSlide)
+	}
 
 	const handleResize = () => {
+		if (!swiper || swiper.destroyed) {
+			return
+		}
+
+		const isMobileNow = mobileQuery.matches
+
+		if (isMobileNow !== isMobileViewport) {
+			isMobileViewport = isMobileNow
+			recreateSwiper()
+			return
+		}
+
 		const nextParams = getSwiperParams()
 		swiper.params.slidesPerView = nextParams.slidesPerView
 		swiper.params.spaceBetween = nextParams.spaceBetween
-		swiper.params.breakpoints[0].spaceBetween = toRuntimePx(16)
-		swiper.params.breakpoints[769].spaceBetween = toRuntimePx(24)
+		swiper.params.breakpoints = getBreakpointParams()
 		swiper.update()
 		updateEdgeNumbers(swiper)
 	}
 
+	createSwiper()
 	window.addEventListener('resize', handleResize)
 }
 
@@ -113,11 +147,35 @@ function initServiceQaAccordion() {
 				iconNode.classList.toggle('icon-black-bg', isExpanded)
 			}
 
-			setExpanded(item.hasAttribute('data-qa-open'))
+			const getInitialExpandedState = () => {
+				if (item.hasAttribute('data-qa-open')) {
+					return true
+				}
 
-			toggleButton.addEventListener('click', () => {
+				const buttonExpanded = toggleButton.getAttribute('aria-expanded')
+
+				if (buttonExpanded === 'true' || buttonExpanded === 'false') {
+					return buttonExpanded === 'true'
+				}
+
+				return !answerNode.classList.contains('hidden')
+			}
+
+			const toggleExpanded = () => {
 				const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true'
 				setExpanded(!isExpanded)
+			}
+
+			setExpanded(getInitialExpandedState())
+
+			item.addEventListener('click', event => {
+				const interactiveTarget = event.target.closest('a, button, input, textarea, select, label')
+
+				if (interactiveTarget && interactiveTarget !== toggleButton) {
+					return
+				}
+
+				toggleExpanded()
 			})
 		})
 	})
@@ -406,8 +464,130 @@ function initServiceRequestModal() {
 	})
 }
 
+function initServiceImageLightbox() {
+	const triggerImages = document.querySelectorAll('[data-image-lightbox-trigger]')
+
+	if (!triggerImages.length) {
+		return
+	}
+
+	const modal = document.createElement('div')
+	modal.setAttribute('data-image-lightbox-modal', '')
+	modal.setAttribute('aria-hidden', 'true')
+	modal.className = 'hidden fixed w-auto h-auto flex items-center justify-center p-2 bp:p-1.6'
+	modal.style.inset = '0'
+	modal.style.zIndex = '2100'
+	modal.style.background = '#00000099'
+	modal.style.backdropFilter = 'blur(1.2rem)'
+	modal.style.border = '0'
+
+	modal.innerHTML = `
+		<div class="relative z-5 w-full h-full flex items-center justify-center px-2 py-2 bp:px-1.6 bp:py-1.6 box-sizing-borderbox" data-image-lightbox-dialog role="dialog" aria-modal="true" aria-label="Image preview">
+			<button type="button" data-image-lightbox-close="button" class="button--icon fixed top-2 right-2 bp:top-1.6 bp:right-1.6 z-5 " aria-label="Close image">
+				<svg class="icon icon-white h-2.4 w-2.4">
+					<use href="/images/svg/svgs.svg#icon-cross"></use>
+				</svg>
+			</button>
+			<img data-image-lightbox-preview class="contain" alt="" style="width: auto; height: auto; max-width: min(140rem, 96vw); max-height: 94vh;" />
+		</div>
+	`
+
+	const dialog = modal.querySelector('[data-image-lightbox-dialog]')
+	const closeButton = modal.querySelector('[data-image-lightbox-close="button"]')
+	const previewImage = modal.querySelector('[data-image-lightbox-preview]')
+
+	if (!dialog || !closeButton || !previewImage) {
+		return
+	}
+
+	document.body.appendChild(modal)
+
+	let activeTrigger = null
+	const bodyLockClass = 'service-request-modal-open'
+
+	const openModal = imageNode => {
+		const source = imageNode.getAttribute('data-image-lightbox-src') || imageNode.currentSrc || imageNode.src
+
+		if (!source) {
+			return
+		}
+
+		activeTrigger = imageNode
+		previewImage.src = source
+		previewImage.alt = imageNode.alt || ''
+		modal.classList.remove('hidden')
+		modal.setAttribute('aria-hidden', 'false')
+		document.body.classList.add(bodyLockClass)
+		closeButton.focus()
+	}
+
+	const closeModal = () => {
+		if (modal.classList.contains('hidden')) {
+			return
+		}
+
+		modal.classList.add('hidden')
+		modal.setAttribute('aria-hidden', 'true')
+		previewImage.removeAttribute('src')
+		previewImage.alt = ''
+
+		if (!document.querySelector('[data-service-request-modal].is-open')) {
+			document.body.classList.remove(bodyLockClass)
+		}
+
+		if (activeTrigger && typeof activeTrigger.focus === 'function') {
+			activeTrigger.focus()
+		}
+
+		activeTrigger = null
+	}
+
+	triggerImages.forEach(imageNode => {
+		imageNode.style.cursor = 'zoom-in'
+
+		if (!imageNode.hasAttribute('tabindex')) {
+			imageNode.setAttribute('tabindex', '0')
+		}
+
+		if (!imageNode.hasAttribute('role')) {
+			imageNode.setAttribute('role', 'button')
+		}
+
+		imageNode.setAttribute('aria-haspopup', 'dialog')
+
+		imageNode.addEventListener('click', event => {
+			event.preventDefault()
+			openModal(imageNode)
+		})
+
+		imageNode.addEventListener('keydown', event => {
+			if (event.key !== 'Enter' && event.key !== ' ') {
+				return
+			}
+
+			event.preventDefault()
+			openModal(imageNode)
+		})
+	})
+
+	dialog.addEventListener('click', event => {
+		if (event.target === dialog) {
+			closeModal()
+		}
+	})
+
+	closeButton.addEventListener('click', closeModal)
+
+	document.addEventListener('keydown', event => {
+		if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+			closeModal()
+		}
+	})
+}
+
 initServiceCasesSwiper()
 initServiceQaAccordion()
 initServiceQaMobileToggle()
 initServiceCasesShowMore()
 initServiceRequestModal()
+initServiceImageLightbox()
