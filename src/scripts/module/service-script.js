@@ -41,8 +41,6 @@ function initServiceCasesSwiper() {
 			spaceBetween: toRuntimePx(44)
 		}
 	})
-	const mobileQuery = window.matchMedia('(max-width: 768px)')
-	let isMobileViewport = mobileQuery.matches
 	let swiper = null
 
 	const createSwiper = initialSlide => {
@@ -82,39 +80,7 @@ function initServiceCasesSwiper() {
 		}
 	}
 
-	const recreateSwiper = () => {
-		const currentSlide = swiper ? swiper.activeIndex : 0
-
-		if (swiper && !swiper.destroyed) {
-			swiper.destroy(true, true)
-		}
-
-		createSwiper(currentSlide)
-	}
-
-	const handleResize = () => {
-		if (!swiper || swiper.destroyed) {
-			return
-		}
-
-		const isMobileNow = mobileQuery.matches
-
-		if (isMobileNow !== isMobileViewport) {
-			isMobileViewport = isMobileNow
-			recreateSwiper()
-			return
-		}
-
-		const nextParams = getSwiperParams()
-		swiper.params.slidesPerView = nextParams.slidesPerView
-		swiper.params.spaceBetween = nextParams.spaceBetween
-		swiper.params.breakpoints = getBreakpointParams()
-		swiper.update()
-		updateEdgeNumbers(swiper)
-	}
-
 	createSwiper()
-	window.addEventListener('resize', handleResize)
 }
 
 function initServiceQaAccordion() {

@@ -387,9 +387,18 @@ $fc-tracking: (
 .min-w-full {
 	min-width: 100%;
 }
-
+.word-break {
+	overflow-wrap: break-word;
+}
 .overflow-hidden {
 	overflow: hidden;
+}
+.overflow-x-hidden {
+	overflow-x: clip;
+	overflow-y: visible;
+}
+.overflow-y-hidden {
+	overflow-y: hidden;
 }
 .overflow-auto {
 	overflow: auto;
@@ -830,6 +839,13 @@ $fc-tracking: (
 
 @include bp-class('overflow-hidden') {
 	overflow: hidden;
+}
+@include bp-class('overflow-x-hidden') {
+	overflow-x: clip;
+	overflow-y: visible;
+}
+@include bp-class('overflow-y-hidden') {
+	overflow-y: hidden;
 }
 @include bp-class('overflow-auto') {
 	overflow: auto;

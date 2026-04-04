@@ -46,7 +46,8 @@ const path = {
 		js: projectFolder + '/scripts/',
 		img: projectFolder + '/images/',
 		fonts: projectFolder + '/fonts/',
-		svg: projectFolder + '/images/svg/'
+		svg: projectFolder + '/images/svg/',
+		files: projectFolder + '/files/'
 	},
 
 	src: {
@@ -56,7 +57,8 @@ const path = {
 
 		img: sourceFolder + '/images/**/*.{jpg,jpeg,png,gif,ico,webp,svg}',
 		fonts: sourceFolder + '/fonts/**/*.{ttf,eot,otf,ttc,woff,woff2}',
-		svgSprite: sourceFolder + '/images/svg/svgs.svg'
+		svgSprite: sourceFolder + '/images/svg/svgs.svg',
+		files: sourceFolder + '/files/**/*'
 	},
 
 	watch: {
@@ -64,7 +66,8 @@ const path = {
 		css: sourceFolder + '/styles/**/*.{scss,css}',
 		js: sourceFolder + '/scripts/**/*.js',
 		img: sourceFolder + '/images/**/*.{jpg,jpeg,png,gif,ico,webp,svg}',
-		svgSprite: sourceFolder + '/images/svg/svgs.svg'
+		svgSprite: sourceFolder + '/images/svg/svgs.svg',
+		files: sourceFolder + '/files/**/*'
 	},
 
 	clean: './' + projectFolder + '/'
@@ -137,6 +140,12 @@ export const fonts = () => {
 		.pipe(ttf2woff2())
 		.pipe(gulp.dest(path.build.fonts))
 }
+export const files = () => {
+	return gulp
+		.src(path.src.files, { base: sourceFolder + '/files' })
+		.pipe(plumber())
+		.pipe(gulp.dest(path.build.files))
+}
 
 export const clean = () => del(path.clean)
 
@@ -151,10 +160,11 @@ export const watchFiles = () => {
 	gulp.watch(path.watch.js, js)
 	gulp.watch(path.watch.img, images)
 	gulp.watch(path.watch.svgSprite, svgSprite)
+	gulp.watch(path.watch.files, files)
 	gulp.watch(sourceFolder + '/fonts/**/*.{ttf,eot,otf,ttc,woff,woff2}', fonts)
 }
 
-const dev = gulp.parallel(css, html, js, images, svgSprite, fonts)
+const dev = gulp.parallel(css, html, js, images, svgSprite, fonts, files)
 const watch = gulp.parallel(watchFiles, browserSync)
 
 export const build = gulp.series(clean, setMode(true), dev, fonts, browserSync)
